@@ -1,480 +1,460 @@
-{\rtf1\ansi\ansicpg1251\cocoartf2822
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
-{\colortbl;\red255\green255\blue255;\red70\green137\blue204;\red23\green24\blue24;\red140\green211\blue254;
-\red202\green202\blue202;\red109\green109\blue109;\red194\green126\blue101;\red109\green115\blue120;\red212\green212\blue212;
-\red113\green192\blue131;\red167\green197\blue152;}
-{\*\expandedcolortbl;;\cssrgb\c33725\c61176\c83922;\cssrgb\c11765\c12157\c12549;\cssrgb\c61176\c86275\c99608;
-\cssrgb\c83137\c83137\c83137;\cssrgb\c50196\c50196\c50196;\cssrgb\c80784\c56863\c47059;\cssrgb\c50196\c52549\c54510;\cssrgb\c86275\c86275\c86275;
-\cssrgb\c50588\c78824\c58431;\cssrgb\c70980\c80784\c65882;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww34360\viewh21600\viewkind0
-\deftab720
-\pard\pardeftab720\partightenfactor0
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MZALITO VIP GROUP - תיירות קזינו יוקרתית</title>
+    <!-- טעינת Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- טעינת גופן Rubik מגוגל פונטים -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- טעינת Font Awesome לאייקונים -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Rubik', sans-serif; /* שינוי הפונט ל-Rubik */
+            background-color: #fcfcfc; /* רקע בהיר מאוד */
+            color: #1a1a1a; /* צבע טקסט ראשי - שחור (לשמירה על קריאות בטקסט רגיל) */
+            line-height: 1.6;
+        }
+        /* התאמות ספציפיות ל-RTL אם נדרש */
+        .text-right {
+            text-align: right;
+        }
+        .text-left {
+            text-align: left;
+        }
+        .space-x-reverse > *:not([dir="rtl"]) + * {
+            margin-left: 0;
+            margin-right: 1rem; /* Tailwind's default space-x-4 is 1rem */
+        }
+        .space-x-reverse > * + *:not([dir="rtl"]) {
+            margin-right: 0;
+            margin-left: 1rem; /* Tailwind's default space-x-4 is 1rem */
+        }
+        /* סגנון לאייקון הפליי המרחף */
+        .play-icon-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: rgba(255, 215, 0, 0.8); /* זהב עם שקיפות */
+            font-size: 4rem;
+            opacity: 0.9;
+            transition: opacity 0.3s ease;
+            pointer-events: none; /* מאפשר לחיצה על הקישור שמתחתיו */
+        }
+        .gallery-item:hover .play-icon-overlay {
+            opacity: 1;
+            color: #FFD700; /* צבע זהב מלא במעבר עכבר */
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+    <!-- כותרת עליונה (Header) -->
+    <header class="bg-gradient-to-r from-neutral-900 to-black text-white p-4 shadow-xl rounded-b-xl">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <!-- לוגו / שם האתר -->
+            <a href="#" class="text-4xl font-bold mb-4 md:mb-0 text-red-600 hover:text-red-700 transition-colors duration-300">
+                <i class="fas fa-crown ml-2"></i>MZALITO VIP GROUP
+            </a>
+            <!-- ניווט -->
+            <nav>
+                <ul class="flex flex-wrap justify-center space-x-4 space-x-reverse md:space-x-6 md:space-x-reverse text-lg">
+                    <li><a href="#home" class="hover:text-amber-400 transition-colors duration-200 p-2 rounded-md hover:bg-neutral-800">בית</a></li>
+                    <li><a href="#about" class="hover:text-amber-400 transition-colors duration-200 p-2 rounded-md hover:bg-neutral-800">אודותינו</a></li>
+                    <li><a href="#services" class="hover:text-amber-400 transition-colors duration-200 p-2 rounded-md hover:bg-neutral-800">החבילות שלנו</a></li>
+                    <li><a href="#gallery" class="hover:text-amber-400 transition-colors duration-200 p-2 rounded-md hover:bg-neutral-800">גלריה</a></li>
+                    <li><a href="#contact" class="hover:text-amber-400 transition-colors duration-200 p-2 rounded-md hover:bg-neutral-800">צור קשר</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-\f0\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 <!DOCTYPE\cf4 \strokec4  html\cf2 \strokec2 >\cf5 \cb1 \strokec5 \
-\pard\pardeftab720\partightenfactor0
-\cf6 \cb3 \strokec6 <\cf2 \strokec2 html\cf5 \strokec5  \cf4 \strokec4 lang\cf6 \strokec6 =\cf7 \strokec7 "he"\cf5 \strokec5  \cf4 \strokec4 dir\cf6 \strokec6 =\cf7 \strokec7 "rtl"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cf6 \cb3 \strokec6 <\cf2 \strokec2 head\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\pard\pardeftab720\partightenfactor0
-\cf5 \cb3     \cf6 \strokec6 <\cf2 \strokec2 meta\cf5 \strokec5  \cf4 \strokec4 charset\cf6 \strokec6 =\cf7 \strokec7 "UTF-8"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 <\cf2 \strokec2 meta\cf5 \strokec5  \cf4 \strokec4 name\cf6 \strokec6 =\cf7 \strokec7 "viewport"\cf5 \strokec5  \cf4 \strokec4 content\cf6 \strokec6 =\cf7 \strokec7 "width=device-width, initial-scale=1.0"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 <\cf2 \strokec2 title\cf6 \strokec6 >\cf5 \strokec5 MZALITO VIP GROUP - \uc0\u1514 \u1497 \u1497 \u1512 \u1493 \u1514  \u1511 \u1494 \u1497 \u1504 \u1493  \u1497 \u1493 \u1511 \u1512 \u1514 \u1497 \u1514 \cf6 \strokec6 </\cf2 \strokec2 title\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3     \cf8 \strokec8 <!-- \uc0\u1496 \u1506 \u1497 \u1504 \u1514  Tailwind CSS -->\cf5 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 <\cf2 \strokec2 script\cf5 \strokec5  \cf4 \strokec4 src\cf6 \strokec6 =\cf7 \strokec7 "https://cdn.tailwindcss.com"\cf6 \strokec6 ></\cf2 \strokec2 script\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3     \cf8 \strokec8 <!-- \uc0\u1496 \u1506 \u1497 \u1504 \u1514  \u1490 \u1493 \u1508 \u1503  Inter \u1502 \u1490 \u1493 \u1490 \u1500  \u1508 \u1493 \u1504 \u1496 \u1497 \u1501  -->\cf5 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 <\cf2 \strokec2 link\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap"\cf5 \strokec5  \cf4 \strokec4 rel\cf6 \strokec6 =\cf7 \strokec7 "stylesheet"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3     \cf8 \strokec8 <!-- \uc0\u1496 \u1506 \u1497 \u1504 \u1514  Font Awesome \u1500 \u1488 \u1497 \u1497 \u1511 \u1493 \u1504 \u1497 \u1501  -->\cf5 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 <\cf2 \strokec2 link\cf5 \strokec5  \cf4 \strokec4 rel\cf6 \strokec6 =\cf7 \strokec7 "stylesheet"\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 <\cf2 \strokec2 style\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3         \cf2 \strokec2 body\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 font-family:\cf5 \strokec5  \cf10 \strokec10 'Inter'\cf9 \strokec9 ,\cf5 \strokec5  \cf7 \strokec7 sans-serif\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 background-color:\cf5 \strokec5  #fcfcfc\cf9 \strokec9 ;\cf5 \strokec5  \cf8 \strokec8 /* \uc0\u1512 \u1511 \u1506  \u1489 \u1492 \u1497 \u1512  \u1502 \u1488 \u1493 \u1491  */\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 color:\cf5 \strokec5  #1a202c\cf9 \strokec9 ;\cf5 \strokec5  \cf8 \strokec8 /* \uc0\u1510 \u1489 \u1506  \u1496 \u1511 \u1505 \u1496  \u1512 \u1488 \u1513 \u1497  - \u1499 \u1502 \u1506 \u1496  \u1513 \u1495 \u1493 \u1512  */\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 line-height:\cf5 \strokec5  \cf11 \strokec11 1.6\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
-\cb3         \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
-\cb3         \cf8 \strokec8 /* \uc0\u1492 \u1514 \u1488 \u1502 \u1493 \u1514  \u1505 \u1508 \u1510 \u1497 \u1508 \u1497 \u1493 \u1514  \u1500 -RTL \u1488 \u1501  \u1504 \u1491 \u1512 \u1513  */\cf5 \cb1 \strokec5 \
-\cb3         \cf2 \strokec2 .text-right\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 text-align:\cf5 \strokec5  \cf7 \strokec7 right\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
-\cb3         \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
-\cb3         \cf2 \strokec2 .text-left\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 text-align:\cf5 \strokec5  \cf7 \strokec7 left\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
-\cb3         \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
-\cb3         \cf2 \strokec2 .space-x-reverse\cf5 \strokec5  \cf9 \strokec9 >\cf5 \strokec5  \cf2 \strokec2 *:not\cf5 \strokec5 (\cf9 \strokec9 [\cf7 \strokec7 dir\cf9 \strokec9 =\cf10 \strokec10 "rtl"\cf9 \strokec9 ]\cf5 \strokec5 ) \cf9 \strokec9 +\cf5 \strokec5  \cf2 \strokec2 *\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 margin-left:\cf5 \strokec5  \cf11 \strokec11 0\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 margin-right:\cf5 \strokec5  \cf11 \strokec11 1rem\cf9 \strokec9 ;\cf5 \strokec5  \cf8 \strokec8 /* Tailwind's default space-x-4 is 1rem */\cf5 \cb1 \strokec5 \
-\cb3         \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
-\cb3         \cf2 \strokec2 .space-x-reverse\cf5 \strokec5  \cf9 \strokec9 >\cf5 \strokec5  \cf2 \strokec2 *\cf5 \strokec5  \cf9 \strokec9 +\cf5 \strokec5  \cf2 \strokec2 *:not\cf5 \strokec5 (\cf9 \strokec9 [\cf7 \strokec7 dir\cf9 \strokec9 =\cf10 \strokec10 "rtl"\cf9 \strokec9 ]\cf5 \strokec5 ) \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 margin-right:\cf5 \strokec5  \cf11 \strokec11 0\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 margin-left:\cf5 \strokec5  \cf11 \strokec11 1rem\cf9 \strokec9 ;\cf5 \strokec5  \cf8 \strokec8 /* Tailwind's default space-x-4 is 1rem */\cf5 \cb1 \strokec5 \
-\cb3         \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
-\cb3         \cf8 \strokec8 /* \uc0\u1505 \u1490 \u1504 \u1493 \u1503  \u1500 \u1488 \u1497 \u1497 \u1511 \u1493 \u1503  \u1492 \u1508 \u1500 \u1497 \u1497  \u1492 \u1502 \u1512 \u1495 \u1507  */\cf5 \cb1 \strokec5 \
-\cb3         \cf2 \strokec2 .play-icon-overlay\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 position:\cf5 \strokec5  \cf7 \strokec7 absolute\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 top:\cf5 \strokec5  \cf11 \strokec11 50%\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 left:\cf5 \strokec5  \cf11 \strokec11 50%\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 transform:\cf5 \strokec5  \cf7 \strokec7 translate(\cf11 \strokec11 -50%\cf9 \strokec9 ,\cf5 \strokec5  \cf11 \strokec11 -50%\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 color:\cf5 \strokec5  \cf7 \strokec7 rgba(\cf11 \strokec11 255\cf9 \strokec9 ,\cf5 \strokec5  \cf11 \strokec11 255\cf9 \strokec9 ,\cf5 \strokec5  \cf11 \strokec11 255\cf9 \strokec9 ,\cf5 \strokec5  \cf11 \strokec11 0.8\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 font-size:\cf5 \strokec5  \cf11 \strokec11 4rem\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 opacity:\cf5 \strokec5  \cf11 \strokec11 0.9\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 transition:\cf5 \strokec5  \cf7 \strokec7 opacity\cf5 \strokec5  \cf11 \strokec11 0.3s\cf5 \strokec5  \cf7 \strokec7 ease\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 pointer-events:\cf5 \strokec5  \cf7 \strokec7 none\cf9 \strokec9 ;\cf5 \strokec5  \cf8 \strokec8 /* \uc0\u1502 \u1488 \u1508 \u1513 \u1512  \u1500 \u1495 \u1497 \u1510 \u1492  \u1506 \u1500  \u1492 \u1511 \u1497 \u1513 \u1493 \u1512  \u1513 \u1502 \u1514 \u1495 \u1514 \u1497 \u1493  */\cf5 \cb1 \strokec5 \
-\cb3         \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
-\cb3         \cf2 \strokec2 .gallery-item:hover\cf5 \strokec5  \cf2 \strokec2 .play-icon-overlay\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 opacity:\cf5 \strokec5  \cf11 \strokec11 1\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 color:\cf5 \strokec5  #FFD700\cf9 \strokec9 ;\cf5 \strokec5  \cf8 \strokec8 /* \uc0\u1510 \u1489 \u1506  \u1494 \u1492 \u1489  \u1489 \u1502 \u1506 \u1489 \u1512  \u1506 \u1499 \u1489 \u1512  */\cf5 \cb1 \strokec5 \
-\cb3         \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 </\cf2 \strokec2 style\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\pard\pardeftab720\partightenfactor0
-\cf6 \cb3 \strokec6 </\cf2 \strokec2 head\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cf6 \cb3 \strokec6 <\cf2 \strokec2 body\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "flex flex-col min-h-screen"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\pard\pardeftab720\partightenfactor0
-\cf5 \cb3     \cf8 \strokec8 <!-- \uc0\u1499 \u1493 \u1514 \u1512 \u1514  \u1506 \u1500 \u1497 \u1493 \u1504 \u1492  (Header) -->\cf5 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 <\cf2 \strokec2 header\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "bg-gradient-to-r from-red-800 to-red-900 text-white p-4 shadow-xl rounded-b-xl"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3         \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "container mx-auto flex flex-col md:flex-row justify-between items-center"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf8 \strokec8 <!-- \uc0\u1500 \u1493 \u1490 \u1493  / \u1513 \u1501  \u1492 \u1488 \u1514 \u1512  -->\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 <\cf2 \strokec2 a\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "#"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-4xl font-extrabold mb-4 md:mb-0 hover:text-amber-300 transition-colors duration-300"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fas fa-crown ml-2"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \strokec5 MZALITO VIP GROUP\cb1 \
-\cb3             \cf6 \strokec6 </\cf2 \strokec2 a\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf8 \strokec8 <!-- \uc0\u1504 \u1497 \u1493 \u1493 \u1496  -->\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 <\cf2 \strokec2 nav\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 ul\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "flex flex-wrap justify-center space-x-4 space-x-reverse md:space-x-6 md:space-x-reverse text-lg"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 li\cf6 \strokec6 ><\cf2 \strokec2 a\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "#home"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "hover:text-amber-300 transition-colors duration-200 p-2 rounded-md hover:bg-red-900"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u1489 \u1497 \u1514 \cf6 \strokec6 </\cf2 \strokec2 a\cf6 \strokec6 ></\cf2 \strokec2 li\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 li\cf6 \strokec6 ><\cf2 \strokec2 a\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "#about"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "hover:text-amber-300 transition-colors duration-200 p-2 rounded-md hover:bg-red-900"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u1488 \u1493 \u1491 \u1493 \u1514 \u1497 \u1504 \u1493 \cf6 \strokec6 </\cf2 \strokec2 a\cf6 \strokec6 ></\cf2 \strokec2 li\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 li\cf6 \strokec6 ><\cf2 \strokec2 a\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "#services"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "hover:text-amber-300 transition-colors duration-200 p-2 rounded-md hover:bg-red-900"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u1492 \u1495 \u1489 \u1497 \u1500 \u1493 \u1514  \u1513 \u1500 \u1504 \u1493 \cf6 \strokec6 </\cf2 \strokec2 a\cf6 \strokec6 ></\cf2 \strokec2 li\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 li\cf6 \strokec6 ><\cf2 \strokec2 a\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "#gallery"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "hover:text-amber-300 transition-colors duration-200 p-2 rounded-md hover:bg-red-900"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u1490 \u1500 \u1512 \u1497 \u1492 \cf6 \strokec6 </\cf2 \strokec2 a\cf6 \strokec6 ></\cf2 \strokec2 li\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 li\cf6 \strokec6 ><\cf2 \strokec2 a\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "#contact"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "hover:text-amber-300 transition-colors duration-200 p-2 rounded-md hover:bg-red-900"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u1510 \u1493 \u1512  \u1511 \u1513 \u1512 \cf6 \strokec6 </\cf2 \strokec2 a\cf6 \strokec6 ></\cf2 \strokec2 li\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 </\cf2 \strokec2 ul\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 </\cf2 \strokec2 nav\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 </\cf2 \strokec2 header\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\
-\cb3     \cf8 \strokec8 <!-- \uc0\u1514 \u1493 \u1499 \u1503  \u1512 \u1488 \u1513 \u1497  (Main Content) -->\cf5 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 <\cf2 \strokec2 main\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "container mx-auto p-6 flex-grow"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3         \cf8 \strokec8 <!-- \uc0\u1511 \u1496 \u1506  \u1489 \u1497 \u1514  / \u1490 \u1497 \u1489 \u1493 \u1512  (Hero Section) -->\cf5 \cb1 \strokec5 \
-\cb3         \cf6 \strokec6 <\cf2 \strokec2 section\cf5 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf7 \strokec7 "home"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "bg-white p-8 mb-12 rounded-xl shadow-2xl text-center md:text-right flex flex-col md:flex-row items-center justify-between"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "md:w-1/2 mb-6 md:mb-0 md:ml-8"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 h2\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-5xl font-extrabold text-red-800 mb-4 leading-tight"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \uc0\u1489 \u1512 \u1493 \u1499 \u1497 \u1501  \u1492 \u1489 \u1488 \u1497 \u1501  \u1500 -MZALITO VIP GROUP!\cb1 \
-\cb3                 \cf6 \strokec6 </\cf2 \strokec2 h2\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-xl leading-relaxed text-gray-700 mb-6"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \uc0\u1495 \u1489 \u1512 \u1514  \u1492 \u1514 \u1497 \u1497 \u1512 \u1493 \u1514  \u1492 \u1489 \u1497 \u1504 \u1500 \u1488 \u1493 \u1502 \u1497 \u1514  \u1492 \u1502 \u1514 \u1502 \u1495 \u1492  \u1489 \u1495 \u1493 \u1493 \u1497 \u1493 \u1514  \u1504 \u1493 \u1508 \u1513  \u1511 \u1494 \u1497 \u1504 \u1493  \u1492 \u1499 \u1500  \u1499 \u1500 \u1493 \u1500 , \u1489 \u1491 \u1490 \u1513  \u1506 \u1500  \u1490 \u1488 \u1493 \u1512 \u1490 \u1497 \u1492  \u1493 \u1488 \u1497 \u1512 \u1493 \u1508 \u1492 .\cb1 \
-\cb3                     \uc0\u1488 \u1510 \u1500 \u1504 \u1493 , \u1499 \u1500  \u1488 \u1493 \u1512 \u1495  \u1492 \u1493 \u1488  VIP \u1488 \u1502 \u1497 \u1514 \u1497 .\cb1 \
-\cb3                 \cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 a\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "#contact"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "inline-block bg-red-700 hover:bg-red-800 text-white font-bold py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition-all duration-300"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \uc0\u1510 \u1512 \u1493  \u1511 \u1513 \u1512  \u1500 \u1495 \u1493 \u1493 \u1497 \u1492  \u1489 \u1500 \u1514 \u1497  \u1504 \u1513 \u1499 \u1495 \u1514 !\cb1 \
-\cb3                 \cf6 \strokec6 </\cf2 \strokec2 a\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "md:w-1/2"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf8 \strokec8 <!-- \uc0\u1514 \u1502 \u1493 \u1504 \u1514  \u1490 \u1497 \u1489 \u1493 \u1512  - \u1492 \u1495 \u1500 \u1507  \u1489 \u1504 \u1514 \u1497 \u1489  \u1514 \u1502 \u1493 \u1504 \u1492  \u1502 \u1513 \u1500 \u1498  -->\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 img\cf5 \strokec5  \cf4 \strokec4 src\cf6 \strokec6 =\cf7 \strokec7 "https://placehold.co/700x400/262626/FFD700?text=\uc0\u1504 \u1493 \u1508 \u1513 +\u1511 \u1494 \u1497 \u1504 \u1493 +\u1497 \u1493 \u1511 \u1512 \u1514 \u1497 "\cf5 \strokec5  \cf4 \strokec4 alt\cf6 \strokec6 =\cf7 \strokec7 "\uc0\u1504 \u1493 \u1508 \u1513  \u1511 \u1494 \u1497 \u1504 \u1493  \u1497 \u1493 \u1511 \u1512 \u1514 \u1497 "\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "rounded-xl shadow-lg max-w-full h-auto border-4 border-amber-200"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3         \cf6 \strokec6 </\cf2 \strokec2 section\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\
-\cb3         \cf8 \strokec8 <!-- \uc0\u1511 \u1496 \u1506  \u1488 \u1493 \u1491 \u1493 \u1514  (About Section) -->\cf5 \cb1 \strokec5 \
-\cb3         \cf6 \strokec6 <\cf2 \strokec2 section\cf5 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf7 \strokec7 "about"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "bg-white p-8 mb-12 rounded-xl shadow-2xl"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 <\cf2 \strokec2 h2\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-4xl font-extrabold text-red-800 mb-6 text-center md:text-right"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u1488 \u1493 \u1491 \u1493 \u1514  MZALITO VIP GROUP\cf6 \strokec6 </\cf2 \strokec2 h2\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "flex flex-col md:flex-row items-center"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "md:w-1/3 mb-6 md:mb-0 md:ml-8"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf8 \strokec8 <!-- \uc0\u1514 \u1502 \u1493 \u1504 \u1514  \u1488 \u1493 \u1491 \u1493 \u1514  - \u1492 \u1495 \u1500 \u1507  \u1489 \u1504 \u1514 \u1497 \u1489  \u1514 \u1502 \u1493 \u1504 \u1492  \u1502 \u1513 \u1500 \u1498  -->\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 img\cf5 \strokec5  \cf4 \strokec4 src\cf6 \strokec6 =\cf7 \strokec7 "https://placehold.co/400x400/4a4a4a/FFD700?text=\uc0\u1495 \u1493 \u1493 \u1497 \u1514 +VIP"\cf5 \strokec5  \cf4 \strokec4 alt\cf6 \strokec6 =\cf7 \strokec7 "\uc0\u1495 \u1493 \u1493 \u1497 \u1514  VIP"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "rounded-full shadow-lg max-w-full h-auto border-4 border-amber-200"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "md:w-2/3 text-center md:text-right"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-lg leading-relaxed text-gray-700 mb-4"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \uc0\u1488 \u1504 \u1495 \u1504 \u1493  \u1495 \u1489 \u1512 \u1514  \u1514 \u1497 \u1497 \u1512 \u1493 \u1514  \u1489 \u1497 \u1504 \u1500 \u1488 \u1493 \u1502 \u1497 \u1514  MZALITO VIP GROUP \u1492 \u1502 \u1514 \u1502 \u1495 \u1492  \u1489 \u1495 \u1493 \u1493 \u1497 \u1493 \u1514  \u1504 \u1493 \u1508 \u1513  \u1511 \u1494 \u1497 \u1504 \u1493  \u1492 \u1499 \u1500  \u1499 \u1500 \u1493 \u1500 , \u1489 \u1491 \u1490 \u1513  \u1506 \u1500  \u1490 \u1488 \u1493 \u1512 \u1490 \u1497 \u1492 .\cb1 \
-\cb3                         \uc0\u1488 \u1510 \u1500 \u1504 \u1493  \u1499 \u1500  \u1488 \u1493 \u1512 \u1495  \u1492 \u1493 \u1488  VIP \u1488 \u1502 \u1497 \u1514 \u1497 . \u1488 \u1504 \u1495 \u1504 \u1493  \u1506 \u1493 \u1489 \u1491 \u1497 \u1501  \u1489 \u1513 \u1497 \u1514 \u1493 \u1507  \u1508 \u1506 \u1493 \u1500 \u1492  \u1506 \u1501  \u1492 \u1511 \u1494 \u1497 \u1504 \u1493 \u1488 \u1497 \u1501  \u1492 \u1497 \u1508 \u1497 \u1501  \u1493 \u1492 \u1502 \u1508 \u1493 \u1488 \u1512 \u1497 \u1501  \u1500 \u1488  \u1512 \u1511  \u1489 \u1490 \u1488 \u1493 \u1512 \u1490 \u1497 \u1492  \u1488 \u1500 \u1488  \u1489 \u1499 \u1500  \u1488 \u1497 \u1512 \u1493 \u1508 \u1492 .\cb1 \
-\cb3                     \cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-lg leading-relaxed text-gray-700"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \uc0\u1502 \u1492  \u1502 \u1497 \u1497 \u1495 \u1491  \u1488 \u1493 \u1514 \u1504 \u1493 ? \u1495 \u1489 \u1497 \u1500 \u1493 \u1514  \u1504 \u1493 \u1508 \u1513  \u1492 \u1499 \u1500  \u1499 \u1500 \u1493 \u1500  \u1506 \u1501  \u1514 \u1504 \u1488 \u1497 \u1501  \u1497 \u1493 \u1510 \u1488 \u1497  \u1491 \u1493 \u1508 \u1503 , \u1488 \u1497 \u1512 \u1493 \u1495  \u1489 \u1512 \u1502 \u1492  \u1492 \u1490 \u1489 \u1493 \u1492 \u1492  \u1489 \u1497 \u1493 \u1514 \u1512 , \u1513 \u1497 \u1512 \u1493 \u1514  \u1488 \u1497 \u1513 \u1497  \u1510 \u1502 \u1493 \u1491  \u1493 \u1489 \u1493 \u1504 \u1493 \u1505 \u1497 \u1501  \u1502 \u1497 \u1493 \u1495 \u1491 \u1497 \u1501  \u1512 \u1511  \u1500 \u1488 \u1493 \u1512 \u1495 \u1497 \u1501  \u1513 \u1500 \u1504 \u1493 .\cb1 \
-\cb3                     \cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "mt-8 grid grid-cols-1 md:grid-cols-3 gap-8 text-center"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "bg-red-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fas fa-star text-red-600 text-4xl mb-3"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 h3\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-2xl font-semibold text-red-700 mb-2"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u1514 \u1504 \u1488 \u1497 \u1501  \u1497 \u1493 \u1510 \u1488 \u1497  \u1491 \u1493 \u1508 \u1503 \cf6 \strokec6 </\cf2 \strokec2 h3\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-gray-600"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u1495 \u1489 \u1497 \u1500 \u1493 \u1514  All-Inclusive \u1506 \u1501  \u1492 \u1496 \u1489 \u1493 \u1514  \u1489 \u1500 \u1506 \u1491 \u1497 \u1493 \u1514 .\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "bg-red-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fas fa-hotel text-red-600 text-4xl mb-3"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 h3\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-2xl font-semibold text-red-700 mb-2"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u1488 \u1497 \u1512 \u1493 \u1495  \u1497 \u1493 \u1511 \u1512 \u1514 \u1497 \cf6 \strokec6 </\cf2 \strokec2 h3\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-gray-600"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u1489 \u1514 \u1497  \u1502 \u1500 \u1493 \u1503  \u1493 \u1511 \u1494 \u1497 \u1504 \u1493 \u1488 \u1497 \u1501  \u1502 \u1492 \u1502 \u1508 \u1493 \u1488 \u1512 \u1497 \u1501  \u1489 \u1488 \u1497 \u1512 \u1493 \u1508 \u1492 .\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "bg-red-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fas fa-hand-holding-heart text-red-600 text-4xl mb-3"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 h3\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-2xl font-semibold text-red-700 mb-2"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u1513 \u1497 \u1512 \u1493 \u1514  \u1488 \u1497 \u1513 \u1497 \cf6 \strokec6 </\cf2 \strokec2 h3\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-gray-600"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u1500 \u1497 \u1493 \u1493 \u1497  \u1510 \u1502 \u1493 \u1491  \u1493 \u1491 \u1488 \u1490 \u1492  \u1500 \u1499 \u1500  \u1508 \u1512 \u1496  \u1493 \u1508 \u1512 \u1496 .\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3         \cf6 \strokec6 </\cf2 \strokec2 section\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\
-\cb3         \cf8 \strokec8 <!-- \uc0\u1511 \u1496 \u1506  \u1513 \u1497 \u1512 \u1493 \u1514 \u1497 \u1501  (Services Section) - \u1513 \u1497 \u1504 \u1493 \u1497  \u1500 "\u1492 \u1495 \u1489 \u1497 \u1500 \u1493 \u1514  \u1513 \u1500 \u1504 \u1493 " -->\cf5 \cb1 \strokec5 \
-\cb3         \cf6 \strokec6 <\cf2 \strokec2 section\cf5 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf7 \strokec7 "services"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "bg-white p-8 mb-12 rounded-xl shadow-2xl"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 <\cf2 \strokec2 h2\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-4xl font-extrabold text-red-800 mb-6 text-center"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u1492 \u1495 \u1489 \u1497 \u1500 \u1493 \u1514  \u1493 \u1492 \u1492 \u1496 \u1489 \u1493 \u1514  \u1513 \u1500 \u1504 \u1493 \cf6 \strokec6 </\cf2 \strokec2 h2\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf8 \strokec8 <!-- \uc0\u1499 \u1512 \u1496 \u1497 \u1505  \u1513 \u1497 \u1512 \u1493 \u1514  1: \u1495 \u1489 \u1497 \u1500 \u1493 \u1514  \u1504 \u1493 \u1508 \u1513  \u1511 \u1494 \u1497 \u1504 \u1493  \u1492 \u1499 \u1500  \u1499 \u1500 \u1493 \u1500  -->\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "bg-red-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 text-center"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fas fa-dice text-red-600 text-5xl mb-4"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 h3\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-2xl font-bold text-red-700 mb-2"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u1495 \u1489 \u1497 \u1500 \u1493 \u1514  \u1504 \u1493 \u1508 \u1513  \u1511 \u1494 \u1497 \u1504 \u1493  All-Inclusive\cf6 \strokec6 </\cf2 \strokec2 h3\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-gray-700"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u1495 \u1493 \u1493 \u1497 \u1493 \u1514  \u1504 \u1493 \u1508 \u1513  \u1502 \u1500 \u1488 \u1493 \u1514  \u1492 \u1499 \u1493 \u1500 \u1500 \u1493 \u1514  \u1496 \u1497 \u1505 \u1493 \u1514 , \u1500 \u1497 \u1504 \u1492 , \u1488 \u1493 \u1499 \u1500  \u1493 \u1490 \u1497 \u1513 \u1492  \u1500 \u1511 \u1494 \u1497 \u1504 \u1493 \u1488 \u1497 \u1501  \u1502 \u1493 \u1489 \u1497 \u1500 \u1497 \u1501 .\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf8 \strokec8 <!-- \uc0\u1499 \u1512 \u1496 \u1497 \u1505  \u1513 \u1497 \u1512 \u1493 \u1514  2: \u1491 \u1490 \u1513  \u1506 \u1500  \u1490 \u1488 \u1493 \u1512 \u1490 \u1497 \u1492  -->\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "bg-red-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 text-center"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fas fa-map-marked-alt text-red-600 text-5xl mb-4"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 h3\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-2xl font-bold text-red-700 mb-2"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u1497 \u1506 \u1491 \u1497 \u1501  \u1502 \u1493 \u1489 \u1497 \u1500 \u1497 \u1501 : \u1490 \u1488 \u1493 \u1512 \u1490 \u1497 \u1492 \cf6 \strokec6 </\cf2 \strokec2 h3\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-gray-700"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u1492 \u1514 \u1502 \u1495 \u1493 \u1514  \u1502 \u1497 \u1493 \u1495 \u1491 \u1514  \u1489 \u1497 \u1506 \u1491 \u1497  \u1511 \u1494 \u1497 \u1504 \u1493  \u1497 \u1493 \u1511 \u1512 \u1514 \u1497 \u1497 \u1501  \u1489 \u1490 \u1488 \u1493 \u1512 \u1490 \u1497 \u1492 .\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf8 \strokec8 <!-- \uc0\u1499 \u1512 \u1496 \u1497 \u1505  \u1513 \u1497 \u1512 \u1493 \u1514  3: \u1511 \u1494 \u1497 \u1504 \u1493 \u1488 \u1497 \u1501  \u1489 \u1488 \u1497 \u1512 \u1493 \u1508 \u1492  -->\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "bg-red-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 text-center"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fas fa-euro-sign text-red-600 text-5xl mb-4"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 h3\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-2xl font-bold text-red-700 mb-2"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u1511 \u1494 \u1497 \u1504 \u1493 \u1488 \u1497 \u1501  \u1504 \u1489 \u1495 \u1512 \u1497 \u1501  \u1489 \u1488 \u1497 \u1512 \u1493 \u1508 \u1492 \cf6 \strokec6 </\cf2 \strokec2 h3\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-gray-700"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u1513 \u1497 \u1514 \u1493 \u1508 \u1497  \u1508 \u1506 \u1493 \u1500 \u1492  \u1506 \u1501  \u1492 \u1511 \u1494 \u1497 \u1504 \u1493 \u1488 \u1497 \u1501  \u1492 \u1502 \u1508 \u1493 \u1488 \u1512 \u1497 \u1501  \u1489 \u1497 \u1493 \u1514 \u1512  \u1489 \u1512 \u1495 \u1489 \u1497  \u1488 \u1497 \u1512 \u1493 \u1508 \u1492 .\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf8 \strokec8 <!-- \uc0\u1499 \u1512 \u1496 \u1497 \u1505  \u1513 \u1497 \u1512 \u1493 \u1514  4: \u1513 \u1497 \u1512 \u1493 \u1514  \u1488 \u1497 \u1513 \u1497  \u1493 \u1510 \u1502 \u1493 \u1491  -->\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "bg-red-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 text-center"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fas fa-user-tie text-red-600 text-5xl mb-4"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 h3\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-2xl font-bold text-red-700 mb-2"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u1513 \u1497 \u1512 \u1493 \u1514  VIP \u1488 \u1497 \u1513 \u1497 \cf6 \strokec6 </\cf2 \strokec2 h3\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-gray-700"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u1500 \u1497 \u1493 \u1493 \u1497  \u1510 \u1502 \u1493 \u1491  \u1493 \u1491 \u1488 \u1490 \u1492  \u1500 \u1499 \u1500  \u1510 \u1512 \u1499 \u1497  \u1492 \u1488 \u1493 \u1512 \u1495 , \u1502 \u1492 \u1512 \u1490 \u1506  \u1492 \u1512 \u1488 \u1513 \u1493 \u1503  \u1493 \u1506 \u1491  \u1492 \u1495 \u1494 \u1512 \u1492  \u1492 \u1489 \u1497 \u1514 \u1492 .\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf8 \strokec8 <!-- \uc0\u1499 \u1512 \u1496 \u1497 \u1505  \u1513 \u1497 \u1512 \u1493 \u1514  5: \u1489 \u1493 \u1504 \u1493 \u1505 \u1497 \u1501  \u1493 \u1492 \u1496 \u1489 \u1493 \u1514  \u1489 \u1500 \u1506 \u1491 \u1497 \u1493 \u1514  -->\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "bg-red-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 text-center"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fas fa-gift text-red-600 text-5xl mb-4"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 h3\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-2xl font-bold text-red-700 mb-2"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u1489 \u1493 \u1504 \u1493 \u1505 \u1497 \u1501  \u1493 \u1492 \u1496 \u1489 \u1493 \u1514  \u1489 \u1500 \u1506 \u1491 \u1497 \u1493 \u1514 \cf6 \strokec6 </\cf2 \strokec2 h3\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-gray-700"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u1492 \u1496 \u1489 \u1493 \u1514  \u1502 \u1497 \u1493 \u1495 \u1491 \u1493 \u1514  \u1493 \u1489 \u1493 \u1504 \u1493 \u1505 \u1497 \u1501  \u1497 \u1497 \u1495 \u1493 \u1491 \u1497 \u1497 \u1501  \u1512 \u1511  \u1500 \u1488 \u1493 \u1512 \u1495 \u1497  MZALITO VIP GROUP.\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf8 \strokec8 <!-- \uc0\u1499 \u1512 \u1496 \u1497 \u1505  \u1513 \u1497 \u1512 \u1493 \u1514  6: \u1488 \u1497 \u1512 \u1493 \u1495  \u1489 \u1512 \u1502 \u1492  \u1492 \u1490 \u1489 \u1493 \u1492 \u1492  \u1489 \u1497 \u1493 \u1514 \u1512  -->\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "bg-red-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 text-center"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fas fa-gem text-red-600 text-5xl mb-4"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 h3\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-2xl font-bold text-red-700 mb-2"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u1488 \u1497 \u1512 \u1493 \u1495  \u1489 \u1512 \u1502 \u1492  \u1492 \u1490 \u1489 \u1493 \u1492 \u1492  \u1489 \u1497 \u1493 \u1514 \u1512 \cf6 \strokec6 </\cf2 \strokec2 h3\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-gray-700"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u1492 \u1511 \u1508 \u1491 \u1492  \u1506 \u1500  \u1488 \u1497 \u1499 \u1493 \u1514  \u1493 \u1497 \u1493 \u1511 \u1512 \u1492  \u1489 \u1499 \u1500  \u1508 \u1512 \u1496 \u1497  \u1492 \u1504 \u1493 \u1508 \u1513 .\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3         \cf6 \strokec6 </\cf2 \strokec2 section\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\
-\cb3         \cf8 \strokec8 <!-- \uc0\u1511 \u1496 \u1506  \u1490 \u1500 \u1512 \u1497 \u1492  (Gallery/Media Section) -->\cf5 \cb1 \strokec5 \
-\cb3         \cf6 \strokec6 <\cf2 \strokec2 section\cf5 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf7 \strokec7 "gallery"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "bg-white p-8 mb-12 rounded-xl shadow-2xl"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 <\cf2 \strokec2 h2\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-4xl font-extrabold text-red-800 mb-6 text-center"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u1490 \u1500 \u1512 \u1497 \u1497 \u1514  \u1495 \u1493 \u1493 \u1497 \u1493 \u1514  VIP\cf6 \strokec6 </\cf2 \strokec2 h2\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-lg leading-relaxed text-gray-700 text-center mb-8"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \uc0\u1492 \u1510 \u1510 \u1492  \u1500 \u1495 \u1493 \u1493 \u1497 \u1514  \u1492 \u1504 \u1493 \u1508 \u1513  \u1493 \u1492 \u1511 \u1494 \u1497 \u1504 \u1493  \u1492 \u1497 \u1493 \u1511 \u1512 \u1514 \u1497 \u1514  \u1513 \u1502 \u1495 \u1499 \u1492  \u1500 \u1499 \u1501  \u1506 \u1501  MZALITO VIP GROUP.\cb1 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 br\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \uc0\u1500 \u1495 \u1510 \u1493  \u1506 \u1500  \u1492 \u1514 \u1502 \u1493 \u1504 \u1493 \u1514  \u1499 \u1491 \u1497  \u1500 \u1510 \u1508 \u1493 \u1514  \u1489 \u1508 \u1493 \u1505 \u1496 \u1497 \u1501  \u1492 \u1502 \u1500 \u1488 \u1497 \u1501  \u1489 \u1488 \u1497 \u1504 \u1505 \u1496 \u1490 \u1512 \u1501  \u1493 \u1489 \u1508 \u1497 \u1497 \u1505 \u1489 \u1493 \u1511 !\cb1 \
-\cb3             \cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf8 \strokec8 <!-- \uc0\u1508 \u1512 \u1497 \u1496 \u1497  \u1490 \u1500 \u1512 \u1497 \u1492  \u1502 \u1488 \u1497 \u1504 \u1505 \u1496 \u1490 \u1512 \u1501  -->\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 gallery-item"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 a\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "https://www.instagram.com/p/DK0GizPgaRr/?igsh=b2x1NHFrdzA1NHI4"\cf5 \strokec5  \cf4 \strokec4 target\cf6 \strokec6 =\cf7 \strokec7 "_blank"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "block relative"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf8 \strokec8 <!-- \uc0\u1492 \u1495 \u1500 \u1507  \u1488 \u1514  \u1492 \u1511 \u1497 \u1513 \u1493 \u1512  \u1489 \u1514 \u1502 \u1493 \u1504 \u1492  \u1492 \u1502 \u1502 \u1493 \u1494 \u1506 \u1512 \u1514  \u1492 \u1488 \u1502 \u1497 \u1514 \u1497 \u1514  \u1513 \u1500  \u1492 \u1508 \u1493 \u1505 \u1496  -->\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 img\cf5 \strokec5  \cf4 \strokec4 src\cf6 \strokec6 =\cf7 \strokec7 "https://placehold.co/600x400/262626/FFD700?text=\uc0\u1488 \u1497 \u1504 \u1505 \u1496 \u1490 \u1512 \u1501 %0A\u1508 \u1493 \u1505 \u1496 "\cf5 \strokec5  \cf4 \strokec4 alt\cf6 \strokec6 =\cf7 \strokec7 "\uc0\u1488 \u1497 \u1504 \u1505 \u1496 \u1490 \u1512 \u1501  \u1508 \u1493 \u1505 \u1496 "\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "w-full h-48 object-cover"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "p-4 bg-gray-50 text-right"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 h4\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-semibold text-lg text-red-700 mb-1"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u1508 \u1493 \u1505 \u1496  \u1488 \u1497 \u1504 \u1505 \u1496 \u1490 \u1512 \u1501 \cf6 \strokec6 </\cf2 \strokec2 h4\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-sm text-gray-600"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u1500 \u1495 \u1510 \u1493  \u1500 \u1510 \u1508 \u1497 \u1497 \u1492  \u1489 \u1508 \u1493 \u1505 \u1496  \u1492 \u1502 \u1500 \u1488 \cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fab fa-instagram text-red-600 text-2xl mt-2"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 </\cf2 \strokec2 a\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 gallery-item"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 a\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "https://www.instagram.com/reel/DMM_r7HMsgA/?igsh=bTNxMXpvYTlkcGNr"\cf5 \strokec5  \cf4 \strokec4 target\cf6 \strokec6 =\cf7 \strokec7 "_blank"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "block relative"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf8 \strokec8 <!-- \uc0\u1492 \u1495 \u1500 \u1507  \u1488 \u1514  \u1492 \u1511 \u1497 \u1513 \u1493 \u1512  \u1489 \u1514 \u1502 \u1493 \u1504 \u1492  \u1492 \u1502 \u1502 \u1493 \u1494 \u1506 \u1512 \u1514  \u1492 \u1488 \u1502 \u1497 \u1514 \u1497 \u1514  \u1513 \u1500  \u1492 \u1512 \u1497 \u1500  -->\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 img\cf5 \strokec5  \cf4 \strokec4 src\cf6 \strokec6 =\cf7 \strokec7 "https://placehold.co/600x400/4a4a4a/FFD700?text=\uc0\u1488 \u1497 \u1504 \u1505 \u1496 \u1490 \u1512 \u1501 %0A\u1512 \u1497 \u1500 "\cf5 \strokec5  \cf4 \strokec4 alt\cf6 \strokec6 =\cf7 \strokec7 "\uc0\u1488 \u1497 \u1504 \u1505 \u1496 \u1490 \u1512 \u1501  \u1512 \u1497 \u1500 "\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "w-full h-48 object-cover"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fas fa-play-circle play-icon-overlay"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "p-4 bg-gray-50 text-right"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 h4\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-semibold text-lg text-red-700 mb-1"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u1512 \u1497 \u1500  \u1488 \u1497 \u1504 \u1505 \u1496 \u1490 \u1512 \u1501 \cf6 \strokec6 </\cf2 \strokec2 h4\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-sm text-gray-600"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u1500 \u1495 \u1510 \u1493  \u1500 \u1510 \u1508 \u1497 \u1497 \u1492  \u1489 \u1512 \u1497 \u1500  \u1492 \u1502 \u1500 \u1488 \cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fab fa-instagram text-red-600 text-2xl mt-2"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 </\cf2 \strokec2 a\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 gallery-item"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 a\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "https://www.instagram.com/reel/DMcVDVFS1Yd/?igsh=YXlkcHNxYWJjOGFy"\cf5 \strokec5  \cf4 \strokec4 target\cf6 \strokec6 =\cf7 \strokec7 "_blank"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "block relative"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf8 \strokec8 <!-- \uc0\u1492 \u1495 \u1500 \u1507  \u1488 \u1514  \u1492 \u1511 \u1497 \u1513 \u1493 \u1512  \u1489 \u1514 \u1502 \u1493 \u1504 \u1492  \u1492 \u1502 \u1502 \u1493 \u1494 \u1506 \u1512 \u1514  \u1492 \u1488 \u1502 \u1497 \u1514 \u1497 \u1514  \u1513 \u1500  \u1492 \u1512 \u1497 \u1500  -->\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 img\cf5 \strokec5  \cf4 \strokec4 src\cf6 \strokec6 =\cf7 \strokec7 "https://placehold.co/600x400/6a6a6a/FFD700?text=\uc0\u1488 \u1497 \u1504 \u1505 \u1496 \u1490 \u1512 \u1501 %0A\u1512 \u1497 \u1500 "\cf5 \strokec5  \cf4 \strokec4 alt\cf6 \strokec6 =\cf7 \strokec7 "\uc0\u1488 \u1497 \u1504 \u1505 \u1496 \u1490 \u1512 \u1501  \u1512 \u1497 \u1500 "\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "w-full h-48 object-cover"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fas fa-play-circle play-icon-overlay"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "p-4 bg-gray-50 text-right"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 h4\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-semibold text-lg text-red-700 mb-1"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u1512 \u1497 \u1500  \u1488 \u1497 \u1504 \u1505 \u1496 \u1490 \u1512 \u1501 \cf6 \strokec6 </\cf2 \strokec2 h4\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-sm text-gray-600"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u1500 \u1495 \u1510 \u1493  \u1500 \u1510 \u1508 \u1497 \u1497 \u1492  \u1489 \u1512 \u1497 \u1500  \u1492 \u1502 \u1500 \u1488 \cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fab fa-instagram text-red-600 text-2xl mt-2"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 </\cf2 \strokec2 a\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 gallery-item"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 a\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "https://www.instagram.com/reel/DMX14nft5MW/?igsh=MWF6ZWZvbjE2a3c5aQ=="\cf5 \strokec5  \cf4 \strokec4 target\cf6 \strokec6 =\cf7 \strokec7 "_blank"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "block relative"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf8 \strokec8 <!-- \uc0\u1492 \u1495 \u1500 \u1507  \u1488 \u1514  \u1492 \u1511 \u1497 \u1513 \u1493 \u1512  \u1489 \u1514 \u1502 \u1493 \u1504 \u1492  \u1492 \u1502 \u1502 \u1493 \u1494 \u1506 \u1512 \u1514  \u1492 \u1488 \u1502 \u1497 \u1514 \u1497 \u1514  \u1513 \u1500  \u1492 \u1512 \u1497 \u1500  -->\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 img\cf5 \strokec5  \cf4 \strokec4 src\cf6 \strokec6 =\cf7 \strokec7 "https://placehold.co/600x400/262626/FFD700?text=\uc0\u1488 \u1497 \u1504 \u1505 \u1496 \u1490 \u1512 \u1501 %0A\u1512 \u1497 \u1500 "\cf5 \strokec5  \cf4 \strokec4 alt\cf6 \strokec6 =\cf7 \strokec7 "\uc0\u1488 \u1497 \u1504 \u1505 \u1496 \u1490 \u1512 \u1501  \u1512 \u1497 \u1500 "\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "w-full h-48 object-cover"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fas fa-play-circle play-icon-overlay"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "p-4 bg-gray-50 text-right"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 h4\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-semibold text-lg text-red-700 mb-1"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u1512 \u1497 \u1500  \u1488 \u1497 \u1504 \u1505 \u1496 \u1490 \u1512 \u1501 \cf6 \strokec6 </\cf2 \strokec2 h4\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-sm text-gray-600"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u1500 \u1495 \u1510 \u1493  \u1500 \u1510 \u1508 \u1497 \u1497 \u1492  \u1489 \u1512 \u1497 \u1500  \u1492 \u1502 \u1500 \u1488 \cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fab fa-instagram text-red-600 text-2xl mt-2"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 </\cf2 \strokec2 a\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 gallery-item"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 a\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "https://www.instagram.com/reel/DMFS29mMr4O/?igsh=MTh2cnpvN3RoeWsxYQ=="\cf5 \strokec5  \cf4 \strokec4 target\cf6 \strokec6 =\cf7 \strokec7 "_blank"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "block relative"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf8 \strokec8 <!-- \uc0\u1492 \u1495 \u1500 \u1507  \u1488 \u1514  \u1492 \u1511 \u1497 \u1513 \u1493 \u1512  \u1489 \u1514 \u1502 \u1493 \u1504 \u1492  \u1492 \u1502 \u1502 \u1493 \u1494 \u1506 \u1512 \u1514  \u1492 \u1488 \u1502 \u1497 \u1514 \u1497 \u1514  \u1513 \u1500  \u1492 \u1512 \u1497 \u1500  -->\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 img\cf5 \strokec5  \cf4 \strokec4 src\cf6 \strokec6 =\cf7 \strokec7 "https://placehold.co/600x400/4a4a4a/FFD700?text=\uc0\u1488 \u1497 \u1504 \u1505 \u1496 \u1490 \u1512 \u1501 %0A\u1512 \u1497 \u1500 "\cf5 \strokec5  \cf4 \strokec4 alt\cf6 \strokec6 =\cf7 \strokec7 "\uc0\u1488 \u1497 \u1504 \u1505 \u1496 \u1490 \u1512 \u1501  \u1512 \u1497 \u1500 "\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "w-full h-48 object-cover"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fas fa-play-circle play-icon-overlay"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "p-4 bg-gray-50 text-right"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 h4\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-semibold text-lg text-red-700 mb-1"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u1512 \u1497 \u1500  \u1488 \u1497 \u1504 \u1505 \u1496 \u1490 \u1512 \u1501 \cf6 \strokec6 </\cf2 \strokec2 h4\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-sm text-gray-600"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u1500 \u1495 \u1510 \u1493  \u1500 \u1510 \u1508 \u1497 \u1497 \u1492  \u1489 \u1512 \u1497 \u1500  \u1492 \u1502 \u1500 \u1488 \cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fab fa-instagram text-red-600 text-2xl mt-2"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 </\cf2 \strokec2 a\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 gallery-item"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 a\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "https://www.instagram.com/reel/DMH5p0RMxAt/?igsh=ajQ1aGd3ZTV5MXQx"\cf5 \strokec5  \cf4 \strokec4 target\cf6 \strokec6 =\cf7 \strokec7 "_blank"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "block relative"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf8 \strokec8 <!-- \uc0\u1492 \u1495 \u1500 \u1507  \u1488 \u1514  \u1492 \u1511 \u1497 \u1513 \u1493 \u1512  \u1489 \u1514 \u1502 \u1493 \u1504 \u1492  \u1492 \u1502 \u1502 \u1493 \u1494 \u1506 \u1512 \u1514  \u1492 \u1488 \u1502 \u1497 \u1514 \u1497 \u1514  \u1513 \u1500  \u1492 \u1512 \u1497 \u1500  -->\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 img\cf5 \strokec5  \cf4 \strokec4 src\cf6 \strokec6 =\cf7 \strokec7 "https://placehold.co/600x400/6a6a6a/FFD700?text=\uc0\u1488 \u1497 \u1504 \u1505 \u1496 \u1490 \u1512 \u1501 %0A\u1512 \u1497 \u1500 "\cf5 \strokec5  \cf4 \strokec4 alt\cf6 \strokec6 =\cf7 \strokec7 "\uc0\u1488 \u1497 \u1504 \u1505 \u1496 \u1490 \u1512 \u1501  \u1512 \u1497 \u1500 "\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "w-full h-48 object-cover"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fas fa-play-circle play-icon-overlay"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "p-4 bg-gray-50 text-right"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 h4\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-semibold text-lg text-red-700 mb-1"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u1512 \u1497 \u1500  \u1488 \u1497 \u1504 \u1505 \u1496 \u1490 \u1512 \u1501 \cf6 \strokec6 </\cf2 \strokec2 h4\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-sm text-gray-600"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u1500 \u1495 \u1510 \u1493  \u1500 \u1510 \u1508 \u1497 \u1497 \u1492  \u1489 \u1512 \u1497 \u1500  \u1492 \u1502 \u1500 \u1488 \cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fab fa-instagram text-red-600 text-2xl mt-2"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 </\cf2 \strokec2 a\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 gallery-item"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 a\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "https://www.instagram.com/reel/DLwzRxtsgQk/?igsh=ZHRvMDZ3a2hnOGNn"\cf5 \strokec5  \cf4 \strokec4 target\cf6 \strokec6 =\cf7 \strokec7 "_blank"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "block relative"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf8 \strokec8 <!-- \uc0\u1492 \u1495 \u1500 \u1507  \u1488 \u1514  \u1492 \u1511 \u1497 \u1513 \u1493 \u1512  \u1489 \u1514 \u1502 \u1493 \u1504 \u1492  \u1492 \u1502 \u1502 \u1493 \u1494 \u1506 \u1512 \u1514  \u1492 \u1488 \u1502 \u1497 \u1514 \u1497 \u1514  \u1513 \u1500  \u1492 \u1512 \u1497 \u1500  -->\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 img\cf5 \strokec5  \cf4 \strokec4 src\cf6 \strokec6 =\cf7 \strokec7 "https://placehold.co/600x400/262626/FFD700?text=\uc0\u1488 \u1497 \u1504 \u1505 \u1496 \u1490 \u1512 \u1501 %0A\u1512 \u1497 \u1500 "\cf5 \strokec5  \cf4 \strokec4 alt\cf6 \strokec6 =\cf7 \strokec7 "\uc0\u1488 \u1497 \u1504 \u1505 \u1496 \u1490 \u1512 \u1501  \u1512 \u1497 \u1500 "\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "w-full h-48 object-cover"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fas fa-play-circle play-icon-overlay"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "p-4 bg-gray-50 text-right"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 h4\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-semibold text-lg text-red-700 mb-1"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u1512 \u1497 \u1500  \u1488 \u1497 \u1504 \u1505 \u1496 \u1490 \u1512 \u1501 \cf6 \strokec6 </\cf2 \strokec2 h4\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-sm text-gray-600"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u1500 \u1495 \u1510 \u1493  \u1500 \u1510 \u1508 \u1497 \u1497 \u1492  \u1489 \u1512 \u1497 \u1500  \u1492 \u1502 \u1500 \u1488 \cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fab fa-instagram text-red-600 text-2xl mt-2"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 </\cf2 \strokec2 a\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 gallery-item"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 a\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "https://www.instagram.com/reel/DK7Oy8WNV3g/?igsh=MTNhNHI5cGV6cThxYw=="\cf5 \strokec5  \cf4 \strokec4 target\cf6 \strokec6 =\cf7 \strokec7 "_blank"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "block relative"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf8 \strokec8 <!-- \uc0\u1492 \u1495 \u1500 \u1507  \u1488 \u1514  \u1492 \u1511 \u1497 \u1513 \u1493 \u1512  \u1489 \u1514 \u1502 \u1493 \u1504 \u1492  \u1492 \u1502 \u1502 \u1493 \u1494 \u1506 \u1512 \u1514  \u1492 \u1488 \u1502 \u1497 \u1514 \u1497 \u1514  \u1513 \u1500  \u1492 \u1512 \u1497 \u1500  -->\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 img\cf5 \strokec5  \cf4 \strokec4 src\cf6 \strokec6 =\cf7 \strokec7 "https://placehold.co/600x400/4a4a4a/FFD700?text=\uc0\u1488 \u1497 \u1504 \u1505 \u1496 \u1490 \u1512 \u1501 %0A\u1512 \u1497 \u1500 "\cf5 \strokec5  \cf4 \strokec4 alt\cf6 \strokec6 =\cf7 \strokec7 "\uc0\u1488 \u1497 \u1504 \u1505 \u1496 \u1490 \u1512 \u1501  \u1512 \u1497 \u1500 "\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "w-full h-48 object-cover"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fas fa-play-circle play-icon-overlay"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "p-4 bg-gray-50 text-right"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 h4\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-semibold text-lg text-red-700 mb-1"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u1512 \u1497 \u1500  \u1488 \u1497 \u1504 \u1505 \u1496 \u1490 \u1512 \u1501 \cf6 \strokec6 </\cf2 \strokec2 h4\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-sm text-gray-600"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u1500 \u1495 \u1510 \u1493  \u1500 \u1510 \u1508 \u1497 \u1497 \u1492  \u1489 \u1512 \u1497 \u1500  \u1492 \u1502 \u1500 \u1488 \cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fab fa-instagram text-red-600 text-2xl mt-2"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 </\cf2 \strokec2 a\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 gallery-item"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 a\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "https://www.instagram.com/reel/DKbyyvYszfH/?igsh=MWV1eDN0NjBka2l0Mw=="\cf5 \strokec5  \cf4 \strokec4 target\cf6 \strokec6 =\cf7 \strokec7 "_blank"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "block relative"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf8 \strokec8 <!-- \uc0\u1492 \u1495 \u1500 \u1507  \u1488 \u1514  \u1492 \u1511 \u1497 \u1513 \u1493 \u1512  \u1489 \u1514 \u1502 \u1493 \u1504 \u1492  \u1492 \u1502 \u1502 \u1493 \u1494 \u1506 \u1512 \u1514  \u1492 \u1488 \u1502 \u1497 \u1514 \u1497 \u1514  \u1513 \u1500  \u1492 \u1512 \u1497 \u1500  -->\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 img\cf5 \strokec5  \cf4 \strokec4 src\cf6 \strokec6 =\cf7 \strokec7 "https://placehold.co/600x400/6a6a6a/FFD700?text=\uc0\u1488 \u1497 \u1504 \u1505 \u1496 \u1490 \u1512 \u1501 %0A\u1512 \u1497 \u1500 "\cf5 \strokec5  \cf4 \strokec4 alt\cf6 \strokec6 =\cf7 \strokec7 "\uc0\u1488 \u1497 \u1504 \u1505 \u1496 \u1490 \u1512 \u1501  \u1512 \u1497 \u1500 "\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "w-full h-48 object-cover"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fas fa-play-circle play-icon-overlay"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "p-4 bg-gray-50 text-right"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 h4\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-semibold text-lg text-red-700 mb-1"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u1512 \u1497 \u1500  \u1488 \u1497 \u1504 \u1505 \u1496 \u1490 \u1512 \u1501 \cf6 \strokec6 </\cf2 \strokec2 h4\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-sm text-gray-600"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u1500 \u1495 \u1510 \u1493  \u1500 \u1510 \u1508 \u1497 \u1497 \u1492  \u1489 \u1512 \u1497 \u1500  \u1492 \u1502 \u1500 \u1488 \cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fab fa-instagram text-red-600 text-2xl mt-2"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 </\cf2 \strokec2 a\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 gallery-item"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 a\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "https://www.instagram.com/p/DFbLF6HuP8P/?igsh=eXZybzcwZG9zang="\cf5 \strokec5  \cf4 \strokec4 target\cf6 \strokec6 =\cf7 \strokec7 "_blank"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "block relative"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf8 \strokec8 <!-- \uc0\u1492 \u1495 \u1500 \u1507  \u1488 \u1514  \u1492 \u1511 \u1497 \u1513 \u1493 \u1512  \u1489 \u1514 \u1502 \u1493 \u1504 \u1492  \u1492 \u1502 \u1502 \u1493 \u1494 \u1506 \u1512 \u1514  \u1492 \u1488 \u1502 \u1497 \u1514 \u1497 \u1514  \u1513 \u1500  \u1492 \u1508 \u1493 \u1505 \u1496  -->\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 img\cf5 \strokec5  \cf4 \strokec4 src\cf6 \strokec6 =\cf7 \strokec7 "https://placehold.co/600x400/262626/FFD700?text=\uc0\u1488 \u1497 \u1504 \u1505 \u1496 \u1490 \u1512 \u1501 %0A\u1508 \u1493 \u1505 \u1496 "\cf5 \strokec5  \cf4 \strokec4 alt\cf6 \strokec6 =\cf7 \strokec7 "\uc0\u1488 \u1497 \u1504 \u1505 \u1496 \u1490 \u1512 \u1501  \u1508 \u1493 \u1505 \u1496 "\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "w-full h-48 object-cover"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "p-4 bg-gray-50 text-right"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 h4\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-semibold text-lg text-red-700 mb-1"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u1508 \u1493 \u1505 \u1496  \u1488 \u1497 \u1504 \u1505 \u1496 \u1490 \u1512 \u1501 \cf6 \strokec6 </\cf2 \strokec2 h4\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-sm text-gray-600"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u1500 \u1495 \u1510 \u1493  \u1500 \u1510 \u1508 \u1497 \u1497 \u1492  \u1489 \u1508 \u1493 \u1505 \u1496  \u1492 \u1502 \u1500 \u1488 \cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fab fa-instagram text-red-600 text-2xl mt-2"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 </\cf2 \strokec2 a\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\
-\cb3                 \cf8 \strokec8 <!-- \uc0\u1508 \u1512 \u1497 \u1496 \u1497  \u1490 \u1500 \u1512 \u1497 \u1492  \u1502 \u1508 \u1497 \u1497 \u1505 \u1489 \u1493 \u1511  -->\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 gallery-item"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 a\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "https://www.facebook.com/share/v/19GhqkeoFC/?mibextid=wwXIfr"\cf5 \strokec5  \cf4 \strokec4 target\cf6 \strokec6 =\cf7 \strokec7 "_blank"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "block relative"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf8 \strokec8 <!-- \uc0\u1492 \u1495 \u1500 \u1507  \u1488 \u1514  \u1492 \u1511 \u1497 \u1513 \u1493 \u1512  \u1489 \u1514 \u1502 \u1493 \u1504 \u1492  \u1492 \u1502 \u1502 \u1493 \u1494 \u1506 \u1512 \u1514  \u1492 \u1488 \u1502 \u1497 \u1514 \u1497 \u1514  \u1513 \u1500  \u1492 \u1493 \u1497 \u1491 \u1488 \u1493  -->\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 img\cf5 \strokec5  \cf4 \strokec4 src\cf6 \strokec6 =\cf7 \strokec7 "https://placehold.co/600x400/262626/FFD700?text=\uc0\u1508 \u1497 \u1497 \u1505 \u1489 \u1493 \u1511 %0A\u1493 \u1497 \u1491 \u1488 \u1493 "\cf5 \strokec5  \cf4 \strokec4 alt\cf6 \strokec6 =\cf7 \strokec7 "\uc0\u1508 \u1497 \u1497 \u1505 \u1489 \u1493 \u1511  \u1493 \u1497 \u1491 \u1488 \u1493 "\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "w-full h-48 object-cover"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fas fa-play-circle play-icon-overlay"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "p-4 bg-gray-50 text-right"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 h4\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-semibold text-lg text-red-700 mb-1"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u1493 \u1497 \u1491 \u1488 \u1493  \u1508 \u1497 \u1497 \u1505 \u1489 \u1493 \u1511 \cf6 \strokec6 </\cf2 \strokec2 h4\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-sm text-gray-600"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u1500 \u1495 \u1510 \u1493  \u1500 \u1510 \u1508 \u1497 \u1497 \u1492  \u1489 \u1493 \u1497 \u1491 \u1488 \u1493  \u1492 \u1502 \u1500 \u1488 \cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fab fa-facebook text-red-600 text-2xl mt-2"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 </\cf2 \strokec2 a\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 gallery-item"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 a\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "https://www.facebook.com/share/r/1GUKMjV4r2/?mibextid=wwXIfr"\cf5 \strokec5  \cf4 \strokec4 target\cf6 \strokec6 =\cf7 \strokec7 "_blank"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "block relative"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf8 \strokec8 <!-- \uc0\u1492 \u1495 \u1500 \u1507  \u1488 \u1514  \u1492 \u1511 \u1497 \u1513 \u1493 \u1512  \u1489 \u1514 \u1502 \u1493 \u1504 \u1492  \u1492 \u1502 \u1502 \u1493 \u1494 \u1506 \u1512 \u1514  \u1492 \u1488 \u1502 \u1497 \u1514 \u1497 \u1514  \u1513 \u1500  \u1492 \u1512 \u1497 \u1500  -->\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 img\cf5 \strokec5  \cf4 \strokec4 src\cf6 \strokec6 =\cf7 \strokec7 "https://placehold.co/600x400/4a4a4a/FFD700?text=\uc0\u1508 \u1497 \u1497 \u1505 \u1489 \u1493 \u1511 %0A\u1512 \u1497 \u1500 "\cf5 \strokec5  \cf4 \strokec4 alt\cf6 \strokec6 =\cf7 \strokec7 "\uc0\u1508 \u1497 \u1497 \u1505 \u1489 \u1493 \u1511  \u1512 \u1497 \u1500 "\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "w-full h-48 object-cover"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fas fa-play-circle play-icon-overlay"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "p-4 bg-gray-50 text-right"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 h4\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-semibold text-lg text-red-700 mb-1"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u1512 \u1497 \u1500  \u1508 \u1497 \u1497 \u1505 \u1489 \u1493 \u1511 \cf6 \strokec6 </\cf2 \strokec2 h4\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-sm text-gray-600"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u1500 \u1495 \u1510 \u1493  \u1500 \u1510 \u1508 \u1497 \u1497 \u1492  \u1489 \u1512 \u1497 \u1500  \u1492 \u1502 \u1500 \u1488 \cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fab fa-facebook text-red-600 text-2xl mt-2"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 </\cf2 \strokec2 a\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 gallery-item"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 a\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "https://www.facebook.com/share/p/16vMLMqhBy/?mibextid=wwXIfr"\cf5 \strokec5  \cf4 \strokec4 target\cf6 \strokec6 =\cf7 \strokec7 "_blank"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "block relative"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf8 \strokec8 <!-- \uc0\u1492 \u1495 \u1500 \u1507  \u1488 \u1514  \u1492 \u1511 \u1497 \u1513 \u1493 \u1512  \u1489 \u1514 \u1502 \u1493 \u1504 \u1492  \u1492 \u1502 \u1502 \u1493 \u1494 \u1506 \u1512 \u1514  \u1492 \u1488 \u1502 \u1497 \u1514 \u1497 \u1514  \u1513 \u1500  \u1492 \u1508 \u1493 \u1505 \u1496  -->\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 img\cf5 \strokec5  \cf4 \strokec4 src\cf6 \strokec6 =\cf7 \strokec7 "https://placehold.co/600x400/6a6a6a/FFD700?text=\uc0\u1508 \u1497 \u1497 \u1505 \u1489 \u1493 \u1511 %0A\u1508 \u1493 \u1505 \u1496 "\cf5 \strokec5  \cf4 \strokec4 alt\cf6 \strokec6 =\cf7 \strokec7 "\uc0\u1508 \u1497 \u1497 \u1505 \u1489 \u1493 \u1511  \u1508 \u1493 \u1505 \u1496 "\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "w-full h-48 object-cover"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "p-4 bg-gray-50 text-right"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 h4\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-semibold text-lg text-red-700 mb-1"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u1508 \u1493 \u1505 \u1496  \u1508 \u1497 \u1497 \u1505 \u1489 \u1493 \u1511 \cf6 \strokec6 </\cf2 \strokec2 h4\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-sm text-gray-600"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u1500 \u1495 \u1510 \u1493  \u1500 \u1510 \u1508 \u1497 \u1497 \u1492  \u1489 \u1508 \u1493 \u1505 \u1496  \u1492 \u1502 \u1500 \u1488 \cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fab fa-facebook text-red-600 text-2xl mt-2"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 </\cf2 \strokec2 a\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 gallery-item"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 a\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "https://www.facebook.com/share/p/1BmsUEWstD/?mibextid=wwXIfr"\cf5 \strokec5  \cf4 \strokec4 target\cf6 \strokec6 =\cf7 \strokec7 "_blank"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "block relative"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf8 \strokec8 <!-- \uc0\u1492 \u1495 \u1500 \u1507  \u1488 \u1514  \u1492 \u1511 \u1497 \u1513 \u1493 \u1512  \u1489 \u1514 \u1502 \u1493 \u1504 \u1492  \u1492 \u1502 \u1502 \u1493 \u1494 \u1506 \u1512 \u1514  \u1492 \u1488 \u1502 \u1497 \u1514 \u1497 \u1514  \u1513 \u1500  \u1492 \u1508 \u1493 \u1505 \u1496  -->\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 img\cf5 \strokec5  \cf4 \strokec4 src\cf6 \strokec6 =\cf7 \strokec7 "https://placehold.co/600x400/262626/FFD700?text=\uc0\u1508 \u1497 \u1497 \u1505 \u1489 \u1493 \u1511 %0A\u1508 \u1493 \u1505 \u1496 "\cf5 \strokec5  \cf4 \strokec4 alt\cf6 \strokec6 =\cf7 \strokec7 "\uc0\u1508 \u1497 \u1497 \u1505 \u1489 \u1493 \u1511  \u1508 \u1493 \u1505 \u1496 "\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "w-full h-48 object-cover"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "p-4 bg-gray-50 text-right"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 h4\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-semibold text-lg text-red-700 mb-1"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u1508 \u1493 \u1505 \u1496  \u1508 \u1497 \u1497 \u1505 \u1489 \u1493 \u1511 \cf6 \strokec6 </\cf2 \strokec2 h4\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-sm text-gray-600"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u1500 \u1495 \u1510 \u1493  \u1500 \u1510 \u1508 \u1497 \u1497 \u1492  \u1489 \u1508 \u1493 \u1505 \u1496  \u1492 \u1502 \u1500 \u1488 \cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fab fa-facebook text-red-600 text-2xl mt-2"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 </\cf2 \strokec2 a\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 gallery-item"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 a\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "https://www.facebook.com/share/v/19Wu2BKBLr/?mibextid=wwXIfr"\cf5 \strokec5  \cf4 \strokec4 target\cf6 \strokec6 =\cf7 \strokec7 "_blank"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "block relative"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf8 \strokec8 <!-- \uc0\u1492 \u1495 \u1500 \u1507  \u1488 \u1514  \u1492 \u1511 \u1497 \u1513 \u1493 \u1512  \u1489 \u1514 \u1502 \u1493 \u1504 \u1492  \u1492 \u1502 \u1502 \u1493 \u1494 \u1506 \u1512 \u1514  \u1492 \u1488 \u1502 \u1497 \u1514 \u1497 \u1514  \u1513 \u1500  \u1492 \u1493 \u1497 \u1491 \u1488 \u1493  -->\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 img\cf5 \strokec5  \cf4 \strokec4 src\cf6 \strokec6 =\cf7 \strokec7 "https://placehold.co/600x400/4a4a4a/FFD700?text=\uc0\u1508 \u1497 \u1497 \u1505 \u1489 \u1493 \u1511 %0A\u1493 \u1497 \u1491 \u1488 \u1493 "\cf5 \strokec5  \cf4 \strokec4 alt\cf6 \strokec6 =\cf7 \strokec7 "\uc0\u1508 \u1497 \u1497 \u1505 \u1489 \u1493 \u1511  \u1493 \u1497 \u1491 \u1488 \u1493 "\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "w-full h-48 object-cover"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fas fa-play-circle play-icon-overlay"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "p-4 bg-gray-50 text-right"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 h4\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-semibold text-lg text-red-700 mb-1"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u1493 \u1497 \u1491 \u1488 \u1493  \u1508 \u1497 \u1497 \u1505 \u1489 \u1493 \u1511 \cf6 \strokec6 </\cf2 \strokec2 h4\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-sm text-gray-600"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u1500 \u1495 \u1510 \u1493  \u1500 \u1510 \u1508 \u1497 \u1497 \u1492  \u1489 \u1493 \u1497 \u1491 \u1488 \u1493  \u1492 \u1502 \u1500 \u1488 \cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fab fa-facebook text-red-600 text-2xl mt-2"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 </\cf2 \strokec2 a\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3         \cf6 \strokec6 </\cf2 \strokec2 section\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\
-\cb3         \cf8 \strokec8 <!-- \uc0\u1511 \u1496 \u1506  \u1510 \u1493 \u1512  \u1511 \u1513 \u1512  (Contact Section) -->\cf5 \cb1 \strokec5 \
-\cb3         \cf6 \strokec6 <\cf2 \strokec2 section\cf5 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf7 \strokec7 "contact"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "bg-white p-8 rounded-xl shadow-2xl"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 <\cf2 \strokec2 h2\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-4xl font-extrabold text-red-800 mb-6 text-center"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u1510 \u1512 \u1493  \u1488 \u1497 \u1514 \u1504 \u1493  \u1511 \u1513 \u1512 \cf6 \strokec6 </\cf2 \strokec2 h2\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "grid grid-cols-1 md:grid-cols-2 gap-8"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf8 \strokec8 <!-- \uc0\u1508 \u1512 \u1496 \u1497  \u1497 \u1510 \u1497 \u1512 \u1514  \u1511 \u1513 \u1512  -->\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-right"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-lg leading-relaxed text-gray-700 mb-6"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \uc0\u1504 \u1513 \u1502 \u1495  \u1500 \u1513 \u1502 \u1493 \u1506  \u1502 \u1499 \u1501  \u1493 \u1500 \u1489 \u1504 \u1493 \u1514  \u1506 \u1489 \u1493 \u1512 \u1499 \u1501  \u1488 \u1514  \u1495 \u1493 \u1508 \u1513 \u1514  \u1492 \u1511 \u1494 \u1497 \u1504 \u1493  \u1492 \u1502 \u1493 \u1513 \u1500 \u1502 \u1514 .\cb1 \
-\cb3                         \uc0\u1510 \u1512 \u1493  \u1511 \u1513 \u1512  \u1506 \u1493 \u1491  \u1492 \u1497 \u1493 \u1501 !\cb1 \
-\cb3                     \cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "space-y-4"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "flex items-center justify-end"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 span\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-amber-500 text-xl ml-3"\cf6 \strokec6 ><\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fas fa-map-marker-alt"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 ></\cf2 \strokec2 span\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-gray-700 text-lg"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u1512 \u1495 \u1493 \u1489  \u1500 \u1491 \u1493 \u1490 \u1502 \u1492  123, \u1506 \u1497 \u1512  \u1500 \u1491 \u1493 \u1490 \u1502 \u1492 , \u1497 \u1513 \u1512 \u1488 \u1500 \cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "flex items-center justify-end"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 span\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-amber-500 text-xl ml-3"\cf6 \strokec6 ><\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fas fa-phone"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 ></\cf2 \strokec2 span\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-gray-700 text-lg"\cf6 \strokec6 >\cf5 \strokec5 054-5530044\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "flex items-center justify-end"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 span\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-amber-500 text-xl ml-3"\cf6 \strokec6 ><\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fab fa-whatsapp"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 ></\cf2 \strokec2 span\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-gray-700 text-lg"\cf6 \strokec6 ><\cf2 \strokec2 a\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "https://wa.me/972545530044"\cf5 \strokec5  \cf4 \strokec4 target\cf6 \strokec6 =\cf7 \strokec7 "_blank"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "hover:underline"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u1513 \u1500 \u1495 \u1493  \u1500 \u1504 \u1493  \u1492 \u1493 \u1491 \u1506 \u1492  \u1489 \u1493 \u1493 \u1488 \u1496 \u1505 \u1488 \u1508 \cf6 \strokec6 </\cf2 \strokec2 a\cf6 \strokec6 ></\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "flex items-center justify-end"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 span\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-amber-500 text-xl ml-3"\cf6 \strokec6 ><\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fab fa-telegram-plane"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 ></\cf2 \strokec2 span\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-gray-700 text-lg"\cf6 \strokec6 ><\cf2 \strokec2 a\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "https://t.me/Mazalito_Vip_group"\cf5 \strokec5  \cf4 \strokec4 target\cf6 \strokec6 =\cf7 \strokec7 "_blank"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "hover:underline"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u1492 \u1510 \u1496 \u1512 \u1508 \u1493  \u1488 \u1500 \u1497 \u1504 \u1493  \u1489 \u1496 \u1500 \u1490 \u1512 \u1501 \cf6 \strokec6 </\cf2 \strokec2 a\cf6 \strokec6 ></\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "flex items-center justify-end"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 span\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-amber-500 text-xl ml-3"\cf6 \strokec6 ><\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fas fa-envelope"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 ></\cf2 \strokec2 span\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-gray-700 text-lg"\cf6 \strokec6 >\cf5 \strokec5 info@example.com\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf8 \strokec8 <!-- \uc0\u1511 \u1497 \u1513 \u1493 \u1512 \u1497  \u1512 \u1513 \u1514 \u1493 \u1514  \u1495 \u1489 \u1512 \u1514 \u1497 \u1493 \u1514  -->\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "flex justify-end space-x-4 space-x-reverse mt-6"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 a\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "https://www.facebook.com/share/1FB4hhwgeh/?mibextid=wwXIfr"\cf5 \strokec5  \cf4 \strokec4 target\cf6 \strokec6 =\cf7 \strokec7 "_blank"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-amber-500 hover:text-amber-600 text-4xl transition-colors duration-200"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                                 \cf6 \strokec6 <\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fab fa-facebook-square"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 </\cf2 \strokec2 a\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 a\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "https://instagram.com"\cf5 \strokec5  \cf4 \strokec4 target\cf6 \strokec6 =\cf7 \strokec7 "_blank"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-amber-500 hover:text-amber-600 text-4xl transition-colors duration-200"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                                 \cf6 \strokec6 <\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fab fa-instagram-square"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 </\cf2 \strokec2 a\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 a\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "https://linkedin.com"\cf5 \strokec5  \cf4 \strokec4 target\cf6 \strokec6 =\cf7 \strokec7 "_blank"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-amber-500 hover:text-amber-600 text-4xl transition-colors duration-200"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                                 \cf6 \strokec6 <\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fab fa-linkedin"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 </\cf2 \strokec2 a\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\
-\cb3                 \cf8 \strokec8 <!-- \uc0\u1496 \u1493 \u1508 \u1505  \u1497 \u1510 \u1497 \u1512 \u1514  \u1511 \u1513 \u1512  -->\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 form\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "space-y-4"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 label\cf5 \strokec5  \cf4 \strokec4 for\cf6 \strokec6 =\cf7 \strokec7 "contact-name"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "block text-gray-700 text-lg font-medium mb-2 text-right"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u1513 \u1501 :\cf6 \strokec6 </\cf2 \strokec2 label\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 input\cf5 \strokec5  \cf4 \strokec4 type\cf6 \strokec6 =\cf7 \strokec7 "text"\cf5 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf7 \strokec7 "contact-name"\cf5 \strokec5  \cf4 \strokec4 name\cf6 \strokec6 =\cf7 \strokec7 "name"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-red-500 focus:border-transparent text-right"\cf5 \strokec5  \cf4 \strokec4 placeholder\cf6 \strokec6 =\cf7 \strokec7 "\uc0\u1492 \u1499 \u1504 \u1505  \u1488 \u1514  \u1513 \u1502 \u1498 "\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 label\cf5 \strokec5  \cf4 \strokec4 for\cf6 \strokec6 =\cf7 \strokec7 "contact-email"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "block text-gray-700 text-lg font-medium mb-2 text-right"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u1488 \u1497 \u1502 \u1497 \u1497 \u1500 :\cf6 \strokec6 </\cf2 \strokec2 label\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 input\cf5 \strokec5  \cf4 \strokec4 type\cf6 \strokec6 =\cf7 \strokec7 "email"\cf5 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf7 \strokec7 "contact-email"\cf5 \strokec5  \cf4 \strokec4 name\cf6 \strokec6 =\cf7 \strokec7 "email"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-red-500 focus:border-transparent text-right"\cf5 \strokec5  \cf4 \strokec4 placeholder\cf6 \strokec6 =\cf7 \strokec7 "\uc0\u1492 \u1499 \u1504 \u1505  \u1488 \u1514  \u1492 \u1488 \u1497 \u1502 \u1497 \u1497 \u1500  \u1513 \u1500 \u1498 "\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 label\cf5 \strokec5  \cf4 \strokec4 for\cf6 \strokec6 =\cf7 \strokec7 "contact-subject"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "block text-gray-700 text-lg font-medium mb-2 text-right"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u1504 \u1493 \u1513 \u1488 :\cf6 \strokec6 </\cf2 \strokec2 label\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 input\cf5 \strokec5  \cf4 \strokec4 type\cf6 \strokec6 =\cf7 \strokec7 "text"\cf5 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf7 \strokec7 "contact-subject"\cf5 \strokec5  \cf4 \strokec4 name\cf6 \strokec6 =\cf7 \strokec7 "subject"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-red-500 focus:border-transparent text-right"\cf5 \strokec5  \cf4 \strokec4 placeholder\cf6 \strokec6 =\cf7 \strokec7 "\uc0\u1492 \u1499 \u1504 \u1505  \u1488 \u1514  \u1504 \u1493 \u1513 \u1488  \u1492 \u1492 \u1493 \u1491 \u1506 \u1492 "\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 label\cf5 \strokec5  \cf4 \strokec4 for\cf6 \strokec6 =\cf7 \strokec7 "contact-message"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "block text-gray-700 text-lg font-medium mb-2 text-right"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u1492 \u1493 \u1491 \u1506 \u1492 :\cf6 \strokec6 </\cf2 \strokec2 label\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 textarea\cf5 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf7 \strokec7 "contact-message"\cf5 \strokec5  \cf4 \strokec4 name\cf6 \strokec6 =\cf7 \strokec7 "message"\cf5 \strokec5  \cf4 \strokec4 rows\cf6 \strokec6 =\cf7 \strokec7 "6"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-red-500 focus:border-transparent text-right"\cf5 \strokec5  \cf4 \strokec4 placeholder\cf6 \strokec6 =\cf7 \strokec7 "\uc0\u1499 \u1514 \u1493 \u1489  \u1488 \u1514  \u1492 \u1493 \u1491 \u1506 \u1514 \u1498  \u1499 \u1488 \u1503 ..."\cf6 \strokec6 ></\cf2 \strokec2 textarea\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 button\cf5 \strokec5  \cf4 \strokec4 type\cf6 \strokec6 =\cf7 \strokec7 "submit"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "bg-red-700 hover:bg-red-800 text-white font-bold py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition-all duration-300 w-full md:w-auto"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \uc0\u1513 \u1500 \u1495  \u1492 \u1493 \u1491 \u1506 \u1492 \cb1 \
-\cb3                         \cf6 \strokec6 </\cf2 \strokec2 button\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 </\cf2 \strokec2 form\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf8 \strokec8 <!-- \uc0\u1502 \u1508 \u1514  \u1502 \u1497 \u1511 \u1493 \u1501  - \u1492 \u1495 \u1500 \u1507  \u1489 -iframe \u1513 \u1500  \u1502 \u1508 \u1514  \u1490 \u1493 \u1490 \u1500  \u1488 \u1502 \u1497 \u1514 \u1497 \u1514  -->\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "mt-12 rounded-xl overflow-hidden shadow-lg border-4 border-amber-200"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 h3\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-2xl font-bold text-red-800 mb-4 text-center"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u1502 \u1510 \u1488 \u1493  \u1488 \u1493 \u1514 \u1504 \u1493  \u1506 \u1500  \u1492 \u1502 \u1508 \u1492 \cf6 \strokec6 </\cf2 \strokec2 h3\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "relative"\cf5 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf7 \strokec7 "padding-bottom: 45%;"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 iframe\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "absolute top-0 left-0 w-full h-full"\cf5 \strokec5  \cf4 \strokec4 src\cf6 \strokec6 =\cf7 \strokec7 "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2705.5173000000005!2d34.781768!3d32.085300!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3465b6f7f7b7b7b7%3A0x7f7f7f7f7f7f7f7f!2sTel%20Aviv-Yafo!5e0!3m2!1sen!2sil!4v1678901234567!5m2!1sen!2sil"\cf5 \strokec5  \cf4 \strokec4 width\cf6 \strokec6 =\cf7 \strokec7 "600"\cf5 \strokec5  \cf4 \strokec4 height\cf6 \strokec6 =\cf7 \strokec7 "450"\cf5 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf7 \strokec7 "border:0;"\cf5 \strokec5  \cf4 \strokec4 allowfullscreen\cf6 \strokec6 =\cf7 \strokec7 ""\cf5 \strokec5  \cf4 \strokec4 loading\cf6 \strokec6 =\cf7 \strokec7 "lazy"\cf6 \strokec6 ></\cf2 \strokec2 iframe\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3         \cf6 \strokec6 </\cf2 \strokec2 section\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 </\cf2 \strokec2 main\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\
-\cb3     \cf8 \strokec8 <!-- \uc0\u1499 \u1493 \u1514 \u1512 \u1514  \u1514 \u1495 \u1514 \u1493 \u1504 \u1492  (Footer) -->\cf5 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 <\cf2 \strokec2 footer\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "bg-gray-900 text-white p-6 mt-12 rounded-t-xl shadow-inner"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3         \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "container mx-auto text-center text-sm"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "mb-2"\cf6 \strokec6 >\cf5 \strokec5 &copy; 2025 MZALITO VIP GROUP. \uc0\u1499 \u1500  \u1492 \u1494 \u1499 \u1493 \u1497 \u1493 \u1514  \u1513 \u1502 \u1493 \u1512 \u1493 \u1514 .\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "flex justify-center space-x-4 space-x-reverse"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 a\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "#privacy"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "hover:text-amber-300 transition-colors duration-200"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u1502 \u1491 \u1497 \u1504 \u1497 \u1493 \u1514  \u1508 \u1512 \u1496 \u1497 \u1493 \u1514 \cf6 \strokec6 </\cf2 \strokec2 a\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 span\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-gray-600"\cf6 \strokec6 >\cf5 \strokec5 |\cf6 \strokec6 </\cf2 \strokec2 span\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 a\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "#terms"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "hover:text-amber-300 transition-colors duration-200"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u1514 \u1504 \u1488 \u1497  \u1513 \u1497 \u1502 \u1493 \u1513 \cf6 \strokec6 </\cf2 \strokec2 a\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 </\cf2 \strokec2 footer\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\pard\pardeftab720\partightenfactor0
-\cf6 \cb3 \strokec6 </\cf2 \strokec2 body\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cf6 \cb3 \strokec6 </\cf2 \strokec2 html\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\
-}
+    <!-- תוכן ראשי (Main Content) -->
+    <main class="container mx-auto p-6 flex-grow">
+        <!-- קטע בית / גיבור (Hero Section) -->
+        <section id="home" class="bg-white p-8 mb-12 rounded-xl shadow-2xl text-center md:text-right flex flex-col md:flex-row items-center justify-between">
+            <div class="md:w-1/2 mb-6 md:mb-0 md:ml-8">
+                <h2 class="text-5xl font-extrabold text-red-600 mb-4 leading-tight">
+                    ברוכים הבאים ל-MZALITO VIP GROUP!
+                </h2>
+                <p class="text-xl leading-relaxed text-gray-700 mb-6">
+                    חברת התיירות הבינלאומית המתמחה בחוויות נופש קזינו הכל כלול, בדגש על גאורגיה ואירופה.
+                    אצלנו, כל אורח הוא VIP אמיתי.
+                </p>
+                <a href="#contact" class="inline-block bg-neutral-800 hover:bg-neutral-950 text-white font-bold py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition-all duration-300">
+                    צרו קשר לחוויה בלתי נשכחת!
+                </a>
+            </div>
+            <div class="md:w-1/2">
+                <!-- תמונת גיבור - החלף בתמונה איכותית של קזינו מפואר או נוף יוקרתי בגאורגיה -->
+                <img src=https://scontent.ftlv2-1.fna.fbcdn.net/v/t39.30808-6/475241059_122099536820747586_3794503495312110639_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=wW4qaml9iVsQ7kNvwGCQrJs&_nc_oc=Adla9dzLe1de2jMbH_mLOOL_sUeBxYmHGdpCzJxjYjcmJ-YdXkRnGRYo0Wcz0cDIYws&_nc_zt=23&_nc_ht=scontent.ftlv2-1.fna&_nc_gid=c7BKSQOInbutTm4WQQoAHw&oh=00_AfQpFdzfAgvypY9bLvOwq8sUWsxKcugjQQe51KeYtyR5aw&oe=6887BCBA alt="נופש קזינו יוקרתי" class="rounded-xl shadow-lg max-w-full h-auto border-4 border-amber-200">
+            </div>
+        </section>
+
+        <!-- קטע אודות (About Section) -->
+        <section id="about" class="bg-white p-8 mb-12 rounded-xl shadow-2xl">
+            <h2 class="text-4xl font-extrabold text-red-600 mb-6 text-center md:text-right">אודות MZALITO VIP GROUP</h2>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/3 mb-6 md:mb-0 md:ml-8">
+                    <!-- תמונת אודות - החלף בתמונה המייצגת שירות VIP או יוקרה -->
+                    <img src=https://scontent.ftlv2-1.fna.fbcdn.net/v/t39.30808-6/520824107_122139892664747586_3638931009642692782_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Shdl60qOKXYQ7kNvwHxjrX4&_nc_oc=AdmrU-gwUHFj80orGSucTs180t8a41z_qj3w9aGotab3SZpWz7Qn3tqF5V2ITo3vElg&_nc_zt=23&_nc_ht=scontent.ftlv2-1.fna&_nc_gid=X8kOTiow9weXRwTfpHLpRQ&oh=00_AfRvzc8vJFB2J6tt5q7ubvh1TDMVNE07bqfNadOwR1QuPQ&oe=6887D846 alt="חווית VIP" class="rounded-full shadow-lg max-w-full h-auto border-4 border-amber-200">
+                </div>
+                <div class="md:w-2/3 text-center md:text-right">
+                    <p class="text-lg leading-relaxed text-gray-700 mb-4">
+                        אנחנו חברת תיירות בינלאומית MZALITO VIP GROUP המתמחה בחוויות נופש קזינו הכל כלול, בדגש על גאורגיה.
+                        אצלנו כל אורח הוא VIP אמיתי. אנחנו עובדים בשיתוף פעולה עם הקזינואים היפים והמפוארים לא רק בגאורגיה אלא בכל אירופה.
+                    </p>
+                    <p class="text-lg leading-relaxed text-gray-700">
+                        מה מייחד אותנו? חבילות נופש הכל כלול עם תנאים יוצאי דופן, אירוח ברמה הגבוהה ביותר, שירות אישי צמוד ובונוסים מיוחדים רק לאורחים שלנו.
+                    </p>
+                </div>
+            </div>
+            <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="bg-neutral-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <i class="fas fa-star text-amber-400 text-4xl mb-3"></i>
+                    <h3 class="text-2xl font-semibold text-red-600 mb-2">תנאים יוצאי דופן</h3>
+                    <p class="text-gray-600">חבילות All-Inclusive עם הטבות בלעדיות.</p>
+                </div>
+                <div class="bg-neutral-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <i class="fas fa-hotel text-amber-400 text-4xl mb-3"></i>
+                    <h3 class="text-2xl font-semibold text-red-600 mb-2">אירוח יוקרתי</h3>
+                    <p class="text-gray-600">בתי מלון וקזינואים מהמפוארים באירופה.</p>
+                </div>
+                <div class="bg-neutral-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <i class="fas fa-hand-holding-heart text-amber-400 text-4xl mb-3"></i>
+                    <h3 class="text-2xl font-semibold text-red-600 mb-2">שירות אישי</h3>
+                    <p class="text-gray-600">ליווי צמוד ודאגה לכל פרט ופרט.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- קטע שירותים (Services Section) - שינוי ל"החבילות שלנו" -->
+        <section id="services" class="bg-white p-8 mb-12 rounded-xl shadow-2xl">
+            <h2 class="text-4xl font-extrabold text-red-600 mb-6 text-center">החבילות וההטבות שלנו</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- כרטיס שירות 1: חבילות נופש קזינו הכל כלול -->
+                <div class="bg-neutral-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 text-center">
+                    <i class="fas fa-dice text-amber-400 text-5xl mb-4"></i>
+                    <h3 class="text-2xl font-bold text-red-600 mb-2">חבילות נופש קזינו All-Inclusive</h3>
+                    <p class="text-gray-700">חוויות נופש מלאות הכוללות טיסות, לינה, אוכל וגישה לקזינואים מובילים.</p>
+                </div>
+                <!-- כרטיס שירות 2: דגש על גאורגיה -->
+                <div class="bg-neutral-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 text-center">
+                    <i class="fas fa-map-marked-alt text-amber-400 text-5xl mb-4"></i>
+                    <h3 class="text-2xl font-bold text-red-600 mb-2">יעדים מובילים: גאורגיה</h3>
+                    <p class="text-700">התמחות מיוחדת ביעדי קזינו יוקרתיים בגאורגיה.</p>
+                </div>
+                <!-- כרטיס שירות 3: קזינואים באירופה -->
+                <div class="bg-neutral-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 text-center">
+                    <i class="fas fa-euro-sign text-amber-400 text-5xl mb-4"></i>
+                    <h3 class="text-2xl font-bold text-red-600 mb-2">קזינואים נבחרים באירופה</h3>
+                    <p class="text-gray-700">שיתופי פעולה עם הקזינואים המפוארים ביותר ברחבי אירופה.</p>
+                </div>
+                <!-- כרטיס שירות 4: שירות אישי וצמוד -->
+                <div class="bg-neutral-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 text-center">
+                    <i class="fas fa-user-tie text-amber-400 text-5xl mb-4"></i>
+                    <h3 class="text-2xl font-bold text-red-600 mb-2">שירות VIP אישי</h3>
+                    <p class="text-gray-700">ליווי צמוד ודאגה לכל צרכי האורח, מהרגע הראשון ועד החזרה הביתה.</p>
+                </div>
+                <!-- כרטיס שירות 5: בונוסים והטבות בלעדיות -->
+                <div class="bg-neutral-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 text-center">
+                    <i class="fas fa-gift text-amber-400 text-5xl mb-4"></i>
+                    <h3 class="text-2xl font-bold text-red-600 mb-2">בונוסים והטבות בלעדיות</h3>
+                    <p class="text-gray-700">הטבות מיוחדות ובונוסים ייחודיים רק לאורחי MZALITO VIP GROUP.</p>
+                </div>
+                <!-- כרטיס שירות 6: אירוח ברמה הגבוהה ביותר -->
+                <div class="bg-neutral-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 text-center">
+                    <i class="fas fa-gem text-amber-400 text-5xl mb-4"></i>
+                    <h3 class="text-2xl font-bold text-red-600 mb-2">אירוח ברמה הגבוהה ביותר</h3>
+                    <p class="text-gray-700">הקפדה על איכות ויוקרה בכל פרטי הנופש.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- קטע גלריה (Gallery/Media Section) -->
+        <section id="gallery" class="bg-white p-8 mb-12 rounded-xl shadow-2xl">
+            <h2 class="text-4xl font-extrabold text-red-600 mb-6 text-center">גלריית חוויות VIP</h2>
+            <p class="text-lg leading-relaxed text-gray-700 text-center mb-8">
+                הצצה לחווית הנופש והקזינו היוקרתית שמחכה לכם עם MZALITO VIP GROUP.
+                <br>
+                לחצו על התמונות כדי לצפות בפוסטים המלאים באינסטגרם ובפייסבוק!
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- פריטי גלריה מאינסטגרם -->
+                <div class="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 gallery-item">
+                    <a href="https://www.instagram.com/p/DK0GizPgaRr/?igsh=b2x1NHFrdzA1NHI4" target="_blank" class="block relative">
+                        <!-- החלף את הקישור בתמונה הממוזערת האמיתית של הפוסט (לדוגמה: תמונה של קזינו או חוויה) -->
+                        <img src=https://scontent.ftlv2-1.fna.fbcdn.net/v/t39.30808-6/475263163_122099544956747586_439483992625141441_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Pl38PyfekmsQ7kNvwGpWL1_&_nc_oc=Adl-72yIl3Xj1IdoqTK0s0pCfcX9rvHjtkRgrTbNp3gwXzCfcG31KgCUesAEr-yWh7k&_nc_zt=23&_nc_ht=scontent.ftlv2-1.fna&_nc_gid=AnKjzz-NdY7Dg_Rod72ORg&oh=00_AfQQ1Qr5Kg09cjJl-2nkZtCOJC0xK49ByuwvnLtVh4Q6Ow&oe=6887BFF0 alt="אינסטגרם פוסט" class="w-full h-48 object-cover">
+                        <div class="p-4 bg-gray-50 text-right">
+                            <h4 class="font-semibold text-lg text-red-600 mb-1">פוסט אינסטגרם</h4>
+                            <p class="text-sm text-gray-600">לחצו לצפייה בפוסט המלא</p>
+                            <i class="fab fa-instagram text-amber-400 text-2xl mt-2"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 gallery-item">
+                    <a href="https://www.instagram.com/reel/DMM_r7HMsgA/?igsh=bTNxMXpvYTlkcGNr" target="_blank" class="block relative">
+                        <!-- החלף את הקישור בתמונה הממוזערת האמיתית של הריל (לדוגמה: וידאו של אווירת קזינו) -->
+                        <img src=https://scontent.ftlv2-1.fna.fbcdn.net/v/t39.30808-6/522720837_122139724874747586_8229253516668199235_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=w4KRNARjtgoQ7kNvwEy2qoz&_nc_oc=Adlcuec8ClP7JOdgNs9pAmx5twcs6G8fQEJMcQ0L9S8VFL-Kx2MGVI7dV3lIzv9qRz4&_nc_zt=23&_nc_ht=scontent.ftlv2-1.fna&_nc_gid=GtvqzDSOd4-Mr9eVoY_ebQ&oh=00_AfT-Bph-vfMw_Mro0K1tLkDbiXTEwfCFY4q0mY7sPlVjYA&oe=6887D35A alt="Instagram Reel" class="w-full h-48 object-cover">
+                        <i class="fas fa-play-circle play-icon-overlay"></i>
+                        <div class="p-4 bg-gray-50 text-right">
+                            <h4 class="font-semibold text-lg text-red-600 mb-1">ריל אינסטגרם</h4>
+                            <p class="text-sm text-gray-600">לחצו לצפייה בריל המלא</p>
+                            <i class="fab fa-instagram text-amber-400 text-2xl mt-2"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 gallery-item">
+                    <a href="https://www.instagram.com/reel/DMcVDVFS1Yd/?igsh=YXlkcHNxYWJjOGFy" target="_blank" class="block relative">
+                        <!-- החלף את הקישור בתמונה הממוזערת האמיתית של הריל (לדוגמה: וידאו של מלון יוקרתי) -->
+                        <img src=https://scontent.ftlv2-1.fna.fbcdn.net/v/t39.30808-6/475328651_122099544974747586_6717867815536294854_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=mRt2ZlNqmecQ7kNvwGs4OyZ&_nc_oc=AdnV3wRfYk4BpdmZfYTQqDRkLSo76YnphwBei3NlV3CN2OZBcSoLldcsWdGee1-08Us&_nc_zt=23&_nc_ht=scontent.ftlv2-1.fna&_nc_gid=eMlEsmDoZ1Og3woXJguzOw&oh=00_AfRgp3YCgt7ZrXgaiSbre-Wv3-er6SLmzN4fUP-KFFYkGw&oe=6887DFC0 alt="Instagram Reel" class="w-full h-48 object-cover">
+                        <i class="fas fa-play-circle play-icon-overlay"></i>
+                        <div class="p-4 bg-gray-50 text-right">
+                            <h4 class="font-semibold text-lg text-red-600 mb-1">ריל אינסטגרם</h4>
+                            <p class="text-sm text-gray-600">לחצו לצפייה בריל המלא</p>
+                            <i class="fab fa-instagram text-amber-400 text-2xl mt-2"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 gallery-item">
+                    <a href="https://www.instagram.com/reel/DMX14nft5MW/?igsh=MWF6ZWZvbjE2a3c5aQ==" target="_blank" class="block relative">
+                        <!-- החלף את הקישור בתמונה הממוזערת האמיתית של הריל -->
+                        <img src=https://scontent.ftlv2-1.fna.fbcdn.net/v/t39.30808-6/475039910_122099544944747586_3591957589110686010_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=NEs22zeqk1wQ7kNvwH4qg-j&_nc_oc=AdlaYT01qQ12VKzbSoBQanDrRoSfMEXhv-C02o_wWMOc1Fy4r_mE7GsniRvGrLIkdBo&_nc_zt=23&_nc_ht=scontent.ftlv2-1.fna&_nc_gid=IVgUUi8ME3xoC8w9Xussdw&oh=00_AfQG4HHC6hMOKSi4FLPXeKJdNh1HXYND3nWaoQGmKcgxLQ&oe=6887C117 alt="Instagram Reel" class="w-full h-48 object-cover">
+                        <i class="fas fa-play-circle play-icon-overlay"></i>
+                        <div class="p-4 bg-gray-50 text-right">
+                            <h4 class="font-semibold text-lg text-red-600 mb-1">ריל אינסטגרם</h4>
+                            <p class="text-sm text-gray-600">לחצו לצפייה בריל המלא</p>
+                            <i class="fab fa-instagram text-amber-400 text-2xl mt-2"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 gallery-item">
+                    <a href="https://www.instagram.com/reel/DMFS29mMr4O/?igsh=MTh2cnpvN3RoeWsxYQ==" target="_blank" class="block relative">
+                        <!-- החלף את הקישור בתמונה הממוזערת האמיתית של הריל -->
+                        <img src=https://scontent.ftlv2-1.fna.fbcdn.net/v/t39.30808-6/520811359_122139893318747586_4664764391594987030_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=OQ05lGIkbWYQ7kNvwEuDbvw&_nc_oc=AdmHXqPFJk3GO71dqdyf6bPC2xjRGdmCGStCOPVMQmqacjbwvAGwfPC1H9QE0UCiqPE&_nc_zt=23&_nc_ht=scontent.ftlv2-1.fna&_nc_gid=Qwojmy5CIrje3EtmLvUtzA&oh=00_AfQ1KEzreSRHd_8A5c4EuOqNi9pWnE9ZOJOicpSSNUD62g&oe=6887C5AD alt="Instagram Reel" class="w-full h-48 object-cover">
+                        <i class="fas fa-play-circle play-icon-overlay"></i>
+                        <div class="p-4 bg-gray-50 text-right">
+                            <h4 class="font-semibold text-lg text-red-600 mb-1">ריל אינסטגרם</h4>
+                            <p class="text-sm text-gray-600">לחצו לצפייה בריל המלא</p>
+                            <i class="fab fa-instagram text-amber-400 text-2xl mt-2"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 gallery-item">
+                    <a href="https://www.instagram.com/reel/DMH5p0RMxAt/?igsh=ajQ1aGd3ZTV5MXQx" target="_blank" class="block relative">
+                        <!-- החלף את הקישור בתמונה הממוזערת האמיתית של הריל -->
+                        <img src=https://scontent.ftlv2-1.fna.fbcdn.net/v/t39.30808-6/523959510_122139893264747586_6289099777472035145_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Ds7roCiDBh8Q7kNvwGnRTw6&_nc_oc=Adli9miQ54MztD-M75u-7h6QWlOGRe82bpt0sE2cqDoGym14uZyTsgOklxWUvkUwJvk&_nc_zt=23&_nc_ht=scontent.ftlv2-1.fna&_nc_gid=1R4iufy5oZ8mJbCixWZHQA&oh=00_AfSrNGGjsx7G8-JwFYvgEV6GFdVpt-qQqq5xsGPlIlYIrg&oe=6887DEB7 alt="Instagram Reel" class="w-full h-48 object-cover">
+                        <i class="fas fa-play-circle play-icon-overlay"></i>
+                        <div class="p-4 bg-gray-50 text-right">
+                            <h4 class="font-semibold text-lg text-red-600 mb-1">ריל אינסטגרם</h4>
+                            <p class="text-sm text-gray-600">לחצו לצפייה בריל המלא</p>
+                            <i class="fab fa-instagram text-amber-400 text-2xl mt-2"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 gallery-item">
+                    <a href="https://www.instagram.com/reel/DLwzRxtsgQk/?igsh=ZHRvMDZ3a2hnOGNn" target="_blank" class="block relative">
+                        <!-- החלף את הקישור בתמונה הממוזערת האמיתית של הריל -->
+                        <img src=https://scontent.ftlv2-1.fna.fbcdn.net/v/t39.30808-6/524134925_122139892628747586_2665446228102060226_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=cN2QB6j3PggQ7kNvwFpP7hy&_nc_oc=AdnC8aoDiXma__toWB1_SEnIskGAIb1yFjnk0Ot8GJfuV7Ecx8DHmuk1OSM8KO18D8M&_nc_zt=23&_nc_ht=scontent.ftlv2-1.fna&_nc_gid=7y4mMQnnLk2CsAMP6vepfQ&oh=00_AfRZ8jZqXZd5rhUUDpXFHvgHUbhoDA1Ap8HnXEH5cGYJhg&oe=6887C5D7 alt="Instagram Reel" class="w-full h-48 object-cover">
+                        <i class="fas fa-play-circle play-icon-overlay"></i>
+                        <div class="p-4 bg-gray-50 text-right">
+                            <h4 class="font-semibold text-lg text-red-600 mb-1">ריל אינסטגרם</h4>
+                            <p class="text-sm text-gray-600">לחצו לצפייה בריל המלא</p>
+                            <i class="fab fa-instagram text-amber-400 text-2xl mt-2"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 gallery-item">
+                    <a href="https://www.instagram.com/reel/DK7Oy8WNV3g/?igsh=MTNhNHI5cGV6cThxYw==" target="_blank" class="block relative">
+                        <!-- החלף את הקישור בתמונה הממוזערת האמיתית של הריל -->
+                        <img src=https://scontent.ftlv2-1.fna.fbcdn.net/v/t39.30808-6/520225980_122139724844747586_6277983055651592048_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=fw4rTN3R040Q7kNvwFWHfI9&_nc_oc=Adl1o_GK7vxYl-oWEVHb_JGs6D6rdwy9CtJqR4mBQK0ZqTw0KuuPc70SeQasSKnKyww&_nc_zt=23&_nc_ht=scontent.ftlv2-1.fna&_nc_gid=Xh9MqSrY9bRMXLgffE12Eg&oh=00_AfRiK3up8oU2NUn2HS9Nq8gItXvo-A1wQWnVkqGNzeT5WA&oe=6887E2AA alt="Instagram Reel" class="w-full h-48 object-cover">
+                        <i class="fas fa-play-circle play-icon-overlay"></i>
+                        <div class="p-4 bg-gray-50 text-right">
+                            <h4 class="font-semibold text-lg text-red-600 mb-1">ריל אינסטגרם</h4>
+                            <p class="text-sm text-gray-600">לחצו לצפייה בריל המלא</p>
+                            <i class="fab fa-instagram text-amber-400 text-2xl mt-2"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 gallery-item">
+                    <a href="https://www.instagram.com/reel/DKbyyvYszfH/?igsh=MWV1eDN0NjBka2l0Mw==" target="_blank" class="block relative">
+                        <!-- החלף את הקישור בתמונה הממוזערת האמיתית של הריל -->
+                        <img src=https://scontent.ftlv2-1.fna.fbcdn.net/v/t39.30808-6/522926146_122139892652747586_9031817558708744511_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=QgF79d-UljEQ7kNvwH-ZwLO&_nc_oc=AdkM-bqgcYlf7FPYJE6fWqgqcCLNZskrdsw48F_uAFsZMDfncsoqQrU6eNeMhABkfyo&_nc_zt=23&_nc_ht=scontent.ftlv2-1.fna&_nc_gid=f3o7kNbAdB1dFmfHq6kUrQ&oh=00_AfRGKWeu6VZ1PtjmFgyeyKo4BPzp38mfrYPtzM_aZXBcgA&oe=6887DC57 alt="Instagram Reel" class="w-full h-48 object-cover">
+                        <i class="fas fa-play-circle play-icon-overlay"></i>
+                        <div class="p-4 bg-gray-50 text-right">
+                            <h4 class="font-semibold text-lg text-red-600 mb-1">ריל אינסטגרם</h4>
+                            <p class="text-sm text-gray-600">לחצו לצפייה בריל המלא</p>
+                            <i class="fab fa-instagram text-amber-400 text-2xl mt-2"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 gallery-item">
+                    <a href="https://www.instagram.com/p/DFbLF6HuP8P/?igsh=eXZybzcwZG9zang=" target="_blank" class="block relative">
+                        <!-- החלף את הקישור בתמונה הממוזערת האמיתית של הפוסט -->
+                        <img src=https://scontent.ftlv2-1.fna.fbcdn.net/v/t39.30808-6/520500114_122139893288747586_1304311803623929180_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=k03Ue1iHRCIQ7kNvwGW-p2A&_nc_oc=AdlbqQ4Q3tE188zJlbIZPQ3JBUqHXNF8vSEd7wR2hEbh6Dmgu0uIFn4bRCgvlcJthZw&_nc_zt=23&_nc_ht=scontent.ftlv2-1.fna&_nc_gid=RVc0G3nSiM_FfdngRsj3aQ&oh=00_AfQcQtum3-bVad5VkjnXKhW-yJozXfUxmwJQ8TTGaZzo0w&oe=6887D674 alt="Instagram Post" class="w-full h-48 object-cover">
+                        <div class="p-4 bg-gray-50 text-right">
+                            <h4 class="font-semibold text-lg text-red-600 mb-1">פוסט אינסטגרם</h4>
+                            <p class="text-sm text-gray-600">לחצו לצפייה בפוסט המלא</p>
+                            <i class="fab fa-instagram text-amber-400 text-2xl mt-2"></i>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- פריטי גלריה מפייסבוק -->
+                <div class="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 gallery-item">
+                    <a href="https://www.facebook.com/share/v/19GhqkeoFC/?mibextid=wwXIfr" target="_blank" class="block relative">
+                        <!-- החלף את הקישור בתמונה הממוזערת האמיתית של הוידאו (לדוגמה: וידאו של חווית נופש) -->
+                        <img src=https://scontent.ftlv2-1.fna.fbcdn.net/v/t39.30808-6/523720088_122139892700747586_3174485126883920905_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=_u-0TNK1TtgQ7kNvwEYfNeB&_nc_oc=AdmxyVzru-groEFbKqR_e9vihPE2xZj_UZCOLct2fL9YPFV-TIBhbe56RZCgKODMMj4&_nc_zt=23&_nc_ht=scontent.ftlv2-1.fna&_nc_gid=n4XFVxWo8DHHAcJOE1Ribw&oh=00_AfS5t5TJv3c-0mNH92_AHza1TaeLuo4EWajY-UpCLTlbhQ&oe=6887D114 alt="וידאו פייסבוק" class="w-full h-48 object-cover">
+                        <i class="fas fa-play-circle play-icon-overlay"></i>
+                        <div class="p-4 bg-gray-50 text-right">
+                            <h4 class="font-semibold text-lg text-red-600 mb-1">וידאו פייסבוק</h4>
+                            <p class="text-sm text-gray-600">לחצו לצפייה בוידאו המלא</p>
+                            <i class="fab fa-facebook text-amber-400 text-2xl mt-2"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 gallery-item">
+                    <a href="https://www.facebook.com/share/r/1GUKMjV4r2/?mibextid=wwXIfr" target="_blank" class="block relative">
+                        <!-- החלף את הקישור בתמונה הממוזערת האמיתית של הריל (לדוגמה: ריל של פעילות VIP) -->
+                        <img src=https://scontent.ftlv2-1.fna.fbcdn.net/v/t39.30808-6/521517668_122139892730747586_7176706511048655513_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_ohc=F0GcYpt9z54Q7kNvwEOTSLd&_nc_oc=Adlg1vuJDTSVdtkx_IqynxaIf3cwRhvoCiU7G_eNGox-odl3eWpn1X9DDs9Xs4Bm2LA&_nc_zt=23&_nc_ht=scontent.ftlv2-1.fna&_nc_gid=YstOiDdXbU82TmlpdzQ4_Q&oh=00_AfTPl_sJI_P7T-Zl3wWRXQcir1uzEo744zE816O05WCurQ&oe=6887DE5C alt="Facebook Reel" class="w-full h-48 object-cover">
+                        <i class="fas fa-play-circle play-icon-overlay"></i>
+                        <div class="p-4 bg-gray-50 text-right">
+                            <h4 class="font-semibold text-lg text-red-600 mb-1">ריל פייסבוק</h4>
+                            <p class="text-sm text-gray-600">לחצו לצפייה בריל המלא</p>
+                            <i class="fab fa-facebook text-amber-400 text-2xl mt-2"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 gallery-item">
+                    <a href="https://www.facebook.com/share/p/16vMLMqhBy/?mibextid=wwXIfr" target="_blank" class="block relative">
+                        <!-- החלף את הקישור בתמונה הממוזערת האמיתית של הפוסט (לדוגמה: תמונה של מלון) -->
+                        <img src=https://scontent.ftlv2-1.fna.fbcdn.net/v/t39.30808-6/475309779_122099544992747586_2183969819352073893_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_ohc=VZ-3fHL1CpQQ7kNvwFEuNDe&_nc_oc=AdkXuPvi0m1xfuijhxjKl-SAcc8xDK6Nfb5YLJ-bOl3euh8AHfy_zkXi65D8102uqk8&_nc_zt=23&_nc_ht=scontent.ftlv2-1.fna&_nc_gid=7zOVUhD-s7JzOIYJSlLyrg&oh=00_AfRqSR5ldpnXDvTRFvEJn-vJlhwsHMk1raIIxwcRAVsjQg&oe=6887D507 alt="Facebook Post" class="w-full h-48 object-cover">
+                        <div class="p-4 bg-gray-50 text-right">
+                            <h4 class="font-semibold text-lg text-red-600 mb-1">פוסט פייסבוק</h4>
+                            <p class="text-sm text-gray-600">לחצו לצפייה בפוסט המלא</p>
+                            <i class="fab fa-facebook text-amber-400 text-2xl mt-2"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 gallery-item">
+                    <a href="https://www.facebook.com/share/p/1BmsUEWstD/?mibextid=wwXIfr" target="_blank" class="block relative">
+                        <!-- החלף את הקישור בתמונה הממוזערת האמיתית של הפוסט -->
+                        <img src=https://scontent.ftlv2-1.fna.fbcdn.net/v/t39.30808-6/523181242_122139892850747586_3450586061704592720_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=GKw9N5gSBw8Q7kNvwHIt69m&_nc_oc=Adnlfy05OLHeWr_EbUkqFygUt3hP-cINjlj812iDTS10f0yuoexkhU_YAo4-dVxT74g&_nc_zt=23&_nc_ht=scontent.ftlv2-1.fna&_nc_gid=BD19zpHqtHaRvZUVcnEgwg&oh=00_AfTHrpvXSo4Wtlpd3VbT4Z3Xj5NGs9EOs7c2ivW0xg4iaw&oe=6887D312 alt="Facebook Post" class="w-full h-48 object-cover">
+                        <div class="p-4 bg-gray-50 text-right">
+                            <h4 class="font-semibold text-lg text-red-600 mb-1">פוסט פייסבוק</h4>
+                            <p class="text-sm text-gray-600">לחצו לצפייה בפוסט המלא</p>
+                            <i class="fab fa-facebook text-amber-400 text-2xl mt-2"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 gallery-item">
+                    <a href="https://www.facebook.com/share/v/19Wu2BKBLr/?mibextid=wwXIfr" target="_blank" class="block relative">
+                        <!-- החלף את הקישור בתמונה הממוזערת האמיתית של הוידאו -->
+                        <img src=https://scontent.ftlv2-1.fna.fbcdn.net/v/t39.30808-6/522392480_122139892964747586_2902960793627593366_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=9RelCNdYT5QQ7kNvwGRZ3Qw&_nc_oc=AdlkNOqXzkGcsP8vK_n3xKoFFi5JoyTAQioE_rAhdq6skrkcrdVRT7nT63cr7Ny05dU&_nc_zt=23&_nc_ht=scontent.ftlv2-1.fna&_nc_gid=RgBsby0rS2zLPw9q89C5Rw&oh=00_AfTjptLxiBKgOSDTqgoCVsCW2EP2MYweFFkqPxe5kDiFHA&oe=6887D76D alt="וידאו פייסבוק" class="w-full h-48 object-cover">
+                        <i class="fas fa-play-circle play-icon-overlay"></i>
+                        <div class="p-4 bg-gray-50 text-right">
+                            <h4 class="font-semibold text-lg text-red-600 mb-1">וידאו פייסבוק</h4>
+                            <p class="text-sm text-gray-600">לחצו לצפייה בוידאו המלא</p>
+                            <i class="fab fa-facebook text-amber-400 text-2xl mt-2"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- קטע צור קשר (Contact Section) -->
+        <section id="contact" class="bg-white p-8 rounded-xl shadow-2xl">
+            <h2 class="text-4xl font-extrabold text-red-600 mb-6 text-center">צרו איתנו קשר</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- פרטי יצירת קשר -->
+                <div class="text-right">
+                    <p class="text-lg leading-relaxed text-gray-700 mb-6">
+                        נשמח לשמוע מכם ולבנות עבורכם את חופשת הקזינו המושלמת.
+                        צרו קשר עוד היום!
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-end">
+                            <span class="text-amber-500 text-xl ml-3"><i class="fas fa-map-marker-alt"></i></span>
+                            <p class="text-gray-700 text-lg">רחוב לדוגמה 123, עיר לדוגמה, ישראל</p>
+                        </div>
+                        <div class="flex items-center justify-end">
+                            <span class="text-amber-500 text-xl ml-3"><i class="fas fa-phone"></i></span>
+                            <p class="text-gray-700 text-lg">054-5530044</p>
+                        </div>
+                        <div class="flex items-center justify-end">
+                            <span class="text-amber-500 text-xl ml-3"><i class="fab fa-whatsapp"></i></span>
+                            <p class="text-gray-700 text-lg"><a href="https://wa.me/972545530044" target="_blank" class="hover:underline">שלחו לנו הודעה בוואטסאפ</a></p>
+                        </div>
+                        <div class="flex items-center justify-end">
+                            <span class="text-amber-500 text-xl ml-3"><i class="fab fa-telegram-plane"></i></span>
+                            <p class="text-gray-700 text-lg"><a href="https://t.me/Mazalito_Vip_group" target="_blank" class="hover:underline">הצטרפו אלינו בטלגרם</a></p>
+                        </div>
+                        <div class="flex items-center justify-end">
+                            <span class="text-amber-500 text-xl ml-3"><i class="fas fa-envelope"></i></span>
+                            <p class="text-gray-700 text-lg">info@example.com</p>
+                        </div>
+                        <!-- קישורי רשתות חברתיות -->
+                        <div class="flex justify-end space-x-4 space-x-reverse mt-6">
+                            <a href="https://www.facebook.com/share/1FB4hhwgeh/?mibextid=wwXIfr" target="_blank" class="text-amber-500 hover:text-amber-600 text-4xl transition-colors duration-200">
+                                <i class="fab fa-facebook-square"></i>
+                            </a>
+                            <a href="https://instagram.com" target="_blank" class="text-amber-500 hover:text-amber-600 text-4xl transition-colors duration-200">
+                                <i class="fab fa-instagram-square"></i>
+                            </a>
+                            <a href="https://linkedin.com" target="_blank" class="text-amber-500 hover:text-amber-600 text-4xl transition-colors duration-200">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- טופס יצירת קשר -->
+                <div>
+                    <form class="space-y-4">
+                        <div>
+                            <label for="contact-name" class="block text-gray-700 text-lg font-medium mb-2 text-right">שם:</label>
+                            <input type="text" id="contact-name" name="name" class="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-amber-500 focus:border-transparent text-right" placeholder="הכנס את שמך">
+                        </div>
+                        <div>
+                            <label for="contact-email" class="block text-gray-700 text-lg font-medium mb-2 text-right">אימייל:</label>
+                            <input type="email" id="contact-email" name="email" class="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-amber-500 focus:border-transparent text-right" placeholder="הכנס את האימייל שלך">
+                        </div>
+                        <div>
+                            <label for="contact-subject" class="block text-gray-700 text-lg font-medium mb-2 text-right">נושא:</label>
+                            <input type="text" id="contact-subject" name="subject" class="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-amber-500 focus:border-transparent text-right" placeholder="הכנס את נושא ההודעה">
+                        </div>
+                        <div>
+                            <label for="contact-message" class="block text-gray-700 text-lg font-medium mb-2 text-right">הודעה:</label>
+                            <textarea id="contact-message" name="message" rows="6" class="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-amber-500 focus:border-transparent text-right" placeholder="כתוב את הודעתך כאן..."></textarea>
+                        </div>
+                        <button type="submit" class="bg-neutral-800 hover:bg-neutral-950 text-white font-bold py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition-all duration-300 w-full md:w-auto">
+                            שלח הודעה
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <!-- מפת מיקום - החלף ב-iframe של מפת גוגל אמיתית -->
+            <div class="mt-12 rounded-xl overflow-hidden shadow-lg border-4 border-amber-200">
+                <h3 class="text-2xl font-bold text-red-600 mb-4 text-center">מצאו אותנו על המפה</h3>
+                <div class="relative" style="padding-bottom: 45%;">
+                    <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2705.5173000000005!2d34.781768!3d32.085300!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3465b6f7f7b7b7b7%3A0x7f7f7f7f7f7f7f7f!2sTel%20Aviv-Yafo!5e0!3m2!1sen!2sil!4v1678901234567!5m2!1sen!2sil" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- כותרת תחתונה (Footer) -->
+    <footer class="bg-gray-900 text-white p-6 mt-12 rounded-t-xl shadow-inner">
+        <div class="container mx-auto text-center text-sm">
+            <p class="mb-2">&copy; 2025 MZALITO VIP GROUP. כל הזכויות שמורות.</p>
+            <div class="flex justify-center space-x-4 space-x-reverse">
+                <a href="#privacy" class="hover:text-amber-300 transition-colors duration-200">מדיניות פרטיות</a>
+                <span class="text-gray-600">|</span>
+                <a href="#terms" class="hover:text-amber-300 transition-colors duration-200">תנאי שימוש</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
